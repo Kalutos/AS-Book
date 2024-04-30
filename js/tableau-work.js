@@ -51,7 +51,7 @@ type2.addEventListener('click', () => {
 // Ajout d'un événement clic sur chaque bouton
 bouton1.addEventListener('click', () => {
   // On affiche la div1 et on masque les autres divs
-  div1.style.display = 'block';
+  div1.style.display = 'flex';
   div2.style.display = 'none';
   div3.style.display = 'none';
   div4.style.display = 'none';
@@ -64,7 +64,7 @@ bouton1.addEventListener('click', () => {
 bouton2.addEventListener('click', () => {
   // On affiche la div2 et on masque les autres divs
   div1.style.display = 'none';
-  div2.style.display = 'block';
+  div2.style.display = 'flex';
   div3.style.display = 'none';
   div4.style.display = 'none';
   div5.style.display = 'none';
@@ -77,7 +77,7 @@ bouton3.addEventListener('click', () => {
   // On affiche la div3 et on masque les autres divs
   div1.style.display = 'none';
   div2.style.display = 'none';
-  div3.style.display = 'block';
+  div3.style.display = 'flex';
   div4.style.display = 'none';
   div5.style.display = 'none';
   div6.style.display = 'none';
@@ -90,7 +90,7 @@ bouton4.addEventListener('click', () => {
   div1.style.display = 'none';
   div2.style.display = 'none';
   div3.style.display = 'none';
-  div4.style.display = 'block';
+  div4.style.display = 'flex';
   div5.style.display = 'none';
   div6.style.display = 'none';
   div7.style.display = 'none';
@@ -103,7 +103,7 @@ bouton5.addEventListener('click', () => {
   div2.style.display = 'none';
   div3.style.display = 'none';
   div4.style.display = 'none';
-  div5.style.display = 'block';
+  div5.style.display = 'flex';
   div6.style.display = 'none';
   div7.style.display = 'none';
   div8.style.display = 'none';
@@ -116,7 +116,7 @@ bouton6.addEventListener('click', () => {
   div3.style.display = 'none';
   div4.style.display = 'none';
   div5.style.display = 'none';
-  div6.style.display = 'block';
+  div6.style.display = 'flex';
   div7.style.display = 'none';
   div8.style.display = 'none';
 });
@@ -129,7 +129,7 @@ bouton7.addEventListener('click', () => {
   div4.style.display = 'none';
   div5.style.display = 'none';
   div6.style.display = 'none';
-  div7.style.display = 'block';
+  div7.style.display = 'flex';
   div8.style.display = 'none';
 });
 
@@ -142,7 +142,7 @@ bouton8.addEventListener('click', () => {
   div5.style.display = 'none';
   div6.style.display = 'none';
   div7.style.display = 'none';
-  div8.style.display = 'block';
+  div8.style.display = 'flex';
 });
 
 
