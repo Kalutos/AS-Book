@@ -147,10 +147,21 @@ bouton8.addEventListener('click', () => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
+  var type1 = document.getElementById("exp-btn-exp");
   var bouton1 = document.getElementById("work-choice-mysticode");
   var div1 = document.getElementById("work-txt-mysticode");
 
   type1.classList.add("active");
   bouton1.classList.add("active");
   div1.classList.add("active");
+  
+  type1.addEventListener('click', () => {
+    type1.classList.add("active");
+    type2.classList.remove("active");
+  });
+
+  type2.addEventListener('click', () => {
+    type2.classList.add("active");
+    type1.classList.remove("active");
+  });
 });

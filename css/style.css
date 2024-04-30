@@ -210,12 +210,11 @@
 /* EXPERIENCE */
     .exp-cont {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         border: 1px solid #64ffda;
         border-radius: 4px;
         width: 90%;
-        height: 600px;
         margin-left: 5em;
     }
     .exp-type {
@@ -238,13 +237,24 @@
         color: #64FFDA;
         padding: 1em;
     }
+    #exp-btn-exp .active {
+        background-color: red;
+        color: #64FFDA;
+    }
+    .exp-column {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+    }
     .exp-choice {
         display: flex;
         flex-direction: column;
         border-right: 1px solid #64ffda;
         width: 20%;
         max-width: 200px;
-        height: 500px;
+        
     }
     .exp-btn {
         width: 100%;
@@ -266,7 +276,6 @@
         display: flex;
         width: 70%;
         max-width: 824px;
-        height: 500px;
     }
     .exp-box {
         display: none;
