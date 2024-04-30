@@ -101,7 +101,6 @@
         flex-direction: column;
         gap: 1em;
         padding-left: 5em;
-        margin: auto;
     }
     .home-cont h1 {
         color: #64FFDA;
@@ -160,12 +159,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 2em;
     }
     .aboutme-cont figure {
         display: flex;
         flex-direction: row-reverse;
         margin: 0;
+        padding-left: 5em;
     }
     .aboutme-fig {
         display: flex;
@@ -187,21 +186,22 @@
         font-size: 1.5rem;
         font-weight: 100;
         line-height: 1.5em;
-        margin-left: 2em;
     }
     .aboutme-status {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         background-color: #112240;
+        margin-left: 0;
         width: 100%;
-        height: 100px;
+        height: 200px;
         gap: 1em;
     }
     .aboutme-status p {
         color: #64ffda;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 100;
     }
 /* END ABOUT ME */
@@ -216,7 +216,7 @@
         border-radius: 4px;
         width: 90%;
         height: 600px;
-        margin-left: 2em;
+        margin-left: 5em;
     }
     .exp-type {
         display: flex;
@@ -244,6 +244,7 @@
         border-right: 1px solid #64ffda;
         width: 20%;
         max-width: 200px;
+        height: 500px;
     }
     .exp-btn {
         width: 100%;
@@ -265,6 +266,7 @@
         display: flex;
         width: 70%;
         max-width: 824px;
+        height: 500px;
     }
     .exp-box {
         display: none;
