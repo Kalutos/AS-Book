@@ -24,11 +24,11 @@ const div8 = document.querySelector('#work-txt-cfdi');
 
 type1.addEventListener('click', () => {
   // On affiche la div1 et on masque les autres divs
-  bouton1.style.display = 'block';
-  bouton2.style.display = 'block';
-  bouton3.style.display = 'block';
-  bouton4.style.display = 'block';
-  bouton5.style.display = 'block';
+  bouton1.style.display = 'flex';
+  bouton2.style.display = 'flex';
+  bouton3.style.display = 'flex';
+  bouton4.style.display = 'flex';
+  bouton5.style.display = 'flex';
   bouton6.style.display = 'none';
   bouton7.style.display = 'none';
   bouton8.style.display = 'none';
@@ -41,9 +41,9 @@ type2.addEventListener('click', () => {
   bouton3.style.display = 'none';
   bouton4.style.display = 'none';
   bouton5.style.display = 'none';
-  bouton6.style.display = 'block';
-  bouton7.style.display = 'block';
-  bouton8.style.display = 'block';
+  bouton6.style.display = 'flex';
+  bouton7.style.display = 'flex';
+  bouton8.style.display = 'flex';
 });
 
 
