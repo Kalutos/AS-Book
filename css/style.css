@@ -1330,12 +1330,11 @@ footer p  {
         max-width: 1023px;
     }
     .formulaire {
-        width: 80%;
+        width: 750px;
         min-width: 600px;
-        max-width: 900px;
+        max-width: 80%;
         border-radius: 3%;
         gap: 2em;
-    }
     }
     .form-ask {
         margin: auto;
@@ -1356,13 +1355,11 @@ footer p  {
     input[type="text"],
     input[type="email"],
     input[type="tel"] {
-        width: 100%;
         padding: 1em;
         border: 1px solid #ccc;
         border-radius: 4px;
     }
     textarea {
-        width: 100%;
         padding: 1em;
         border: 1px solid #ccc;
         border-radius: 4px;
