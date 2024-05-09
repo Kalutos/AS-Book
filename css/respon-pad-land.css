@@ -1,110 +1,79 @@
-/* Ajoutez vos styles CSS pour les téléphones F-Portrait ici */
-@media only screen and (max-width: 767px) and (orientation: portrait){
-/* Ajoutez vos styles CSS pour les téléphones mobiles ici */
-main {
-    margin-top: 10em;
-}
-.ancre-title {
-    min-width: 768px;
-    max-width: 1023px;
-}
-.ancre-title h2 {
-    margin: auto;
-    width: 90%;
-    color: #CCD6F6;
-    padding-top: 4em;
-    padding-bottom: 2em;
-}
+/* Ajoutez vos styles CSS pour les tablettes ici */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+/* Ajoutez vos styles CSS pour les tablettes */
+    main {
+        margin-top: 10em;
+    }
+    .ancre-title {
+        width: 100%;
+        min-width: 768px;
+        max-width: 1023px;
+    }
+    .ancre-title h2 {
+        margin: auto;
+        width: 90%;
+        color: #CCD6F6;
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
 /* HEADER */
     header {
         width: 100%;
-        padding: 1em;
-    
+        height: 80px;
+        z-index: 1;
     }
     .logo {
-        height: 80px;
-        align-items: center;
-        display: flex;
+        margin: 0 15px;
     }
     .logo img {
         width: 100%;
-        max-width: 200px;
+        max-width: 250px;
     }
-    .menu-toggle {
-        display: flex;
-    }
-
-    .menu-container {
-        display: none;
-        position: absolute;
-        top: 80px; /* Modifier la valeur pour correspondre à la hauteur de votre header */
-        left: 0;
-        background-color: #112240;
-        width: 100%;
-        padding: 1em;
-        z-index: 1000;
-    }
-
-    .menu-container.active {
-        display: flex;
-    }
-    .menu-container ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .menu-container ul li {
-        margin: 10px 0;
-    }
-
     .menu-button-container {
-        display: flex;
-        margin: 0;
+        height: 100%;
+        width: 30px;
     }
     .menu-button,
     .menu-button::before,
     .menu-button::after {
-        display: block;
-        background-color: #c6c6c6;
-        position: absolute;
         height: 4px;
         width: 30px;
         transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
         border-radius: 2px;
     }
-
     .menu-button::before {
-        content: '';
         margin-top: -8px;
     }
-
     .menu-button::after {
-        content: '';
         margin-top: 8px;
     }
-
     #menu-toggle:checked + .menu-button-container .menu-button::before {
         margin-top: 0px;
         transform: rotate(405deg);
     }
-
-    #menu-toggle:checked + .menu-button-container .menu-button {
-        background: rgba(255, 255, 255, 0);
-    }
-
     #menu-toggle:checked + .menu-button-container .menu-button::after {
         margin-top: 0px;
         transform: rotate(-405deg);
     }
-
+    .menu-container ul {
+        margin: 0;
+        padding: 0;
+    }
+    .menu-container ul li {
+        margin-left: 20px;
+    }
+    .menu-container ul li a {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 /* FIN HEADER */
 
 
 /* HOME */
     .home-cont {
-        min-width: 780px;
-        max-width: 1010px;
+        width: 1023px;
+        min-width: 768px;
+        max-width: 80%;
         gap: 2em;
     }
     .home-t {
@@ -133,6 +102,10 @@ main {
         line-height: 1.5em;
     }
     .home-btn {
+        margin: auto;
+        width: 80%;
+    }
+    .btn-home {
         width: 15%;
         padding: 1em;
         border-radius: 5%;
@@ -416,13 +389,13 @@ main {
 /* CONTACT */
     .form-cont {
         width: 100%;
-        min-width: 360px;
-        max-width: 767px;
+        min-width: 768px;
+        max-width: 1023px;
     }
     .formulaire {
-        width: 100%;
-        min-width: 340px;
-        max-width: 750px;
+        width: 750px;
+        min-width: 600px;
+        max-width: 80%;
         border: 1px solid#8892B0;
         border-radius: 3%;
         gap: 2em;
@@ -529,5 +502,5 @@ main {
         font-size: 1.8em;
     }
 /* END FOOTER */
-
 }
+
