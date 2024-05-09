@@ -274,6 +274,9 @@
 /* WORK */
     .work-cont {
         display: flex;
+    }
+    .w-fig-box {
+        display: flex;
         flex-direction: column;
     }
     .work-fig-t1, 
@@ -332,11 +335,14 @@
 /* PROJECT */
     .project-cont {
         display: flex;
+    }
+    .box-files{
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .project-files {
+    .project-file {
         display: flex;
         flex-direction: column;
         background-color: #112240;

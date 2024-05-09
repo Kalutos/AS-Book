@@ -5,10 +5,14 @@
             margin-top: 10em;
         }
         .ancre-title {
-            margin: auto;
-            width: 90%;
+            width: 100%;
             min-width: 768px;
             max-width: 1023px;
+        }
+        .ancre-title h2 {
+            margin: auto;
+            width: 90%;
+            color: #CCD6F6;
             padding-top: 4em;
             padding-bottom: 2em;
         }
@@ -253,12 +257,15 @@
             width: 100%;
             min-width: 768px;
             max-width: 1023px;
+        }
+        .w-fig-box {
+            margin: auto;
+            width: 80%;
             gap: 3em;
         }
         .work-fig-t1, 
         .work-fig-t2 {
             margin: 0 auto;
-            width: 80%;
             gap: 1em;
         }
         .work-img {
@@ -312,11 +319,15 @@
             min-width: 768px;
             max-width: 1023px;
         }
-        .project-files {
+        .box-files{
+            margin: auto;
+            width: 80%;
+            gap: 1em;
+        }
+        .project-file {
             width: 300px;
             min-width: 250px;
             max-width: 25%;
-            margin: 1em;
         }
         .project-head {
             width: 100%;
@@ -380,6 +391,7 @@
             width: 750px;
             min-width: 600px;
             max-width: 80%;
+            border: 1px solid#8892B0;
             border-radius: 3%;
             gap: 2em;
         }
@@ -401,32 +413,23 @@
         }
         input[type="text"],
         input[type="email"],
-        input[type="tel"] {
+        input[type="tel"], 
+        textarea {
             padding: 1em;
             margin: auto;
+            width: 90%;
             border: 1px solid #ccc;
             border-radius: 4px;
-            width: 720px;
-            min-width: 500px;
-            max-width: 100%;
         }
         label {
             font-size: 1.2rem;
         }
-        textarea {
-            padding: 1em;
-            margin: auto;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            width: 720px;
-            min-width: 500px;
-            max-width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
         .form-infos-pro {
-            width: 80%;
             margin: auto;
+            width: 80%;
+            margin-top: 1em;
+            padding: 1em;
+            gap: 2em;
         }
         .form-infos-txt{
             width: 45%;
@@ -446,11 +449,14 @@
             font-size: 1.4rem;
         }
         .check-answer {
+            margin: auto;
+            width: 80%;
+            margin-top: 1em;
+            padding: 1em;
             gap: 2em;
         }
         .privacy-data {
-            margin: auto;
-            width: 80%;
+            width: 100%;
             gap: 2em;
         }
         .form-box-btn {
