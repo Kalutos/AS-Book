@@ -1,12 +1,49 @@
 /* PAGE CSS */
 
 /* OPTION GENERAL */
+
+    /*
+        src: url('font/inter-Black.ttf') format('truetype');
+        src: url('font/inter-Bold.ttf') format('truetype');
+        src: url('font/inter-ExtraBold.ttf') format('truetype');
+        src: url('font/inter-ExtraLight.ttf') format('truetype');
+        src: url('font/inter-Light.ttf') format('truetype');
+        src: url('font/inter-Medium.ttf') format('truetype');
+        src: url('font/inter-SemiBold.ttf') format('truetype');
+        src: url('font/inter-Thin.ttf') format('truetype');
+        src: url('font/inter-VariableFont_slnt,wght.ttf') format('truetype');
+    */
+
+/* Déclaration de la police Inter Black */
+    @font-face {
+        font-family: 'Inter Regular';
+        src: url('font/inter-Regular.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    /* Déclaration de la police Inter Bold */
+    @font-face {
+        font-family: 'Inter Bold';
+        src: url('font/inter-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* Déclaration de la police Inter ExtraBold */
+    @font-face {
+        font-family: 'Inter AllType';
+        src: url('font/inter-VariableFont_slnt,wght.ttf.ttf') format('truetype');
+        font-weight: 800;
+        font-style: normal;
+    }
+
     body {
         display: flex;
         flex-direction: column;
         background-color: #0A192F;
         margin: 0;
-        font-family: 'Inter-Variable', sans-serif;
+        font-family: 'Inter AllType', sans-serif;
         color: #CCD6F6;
     }
 
@@ -91,30 +128,28 @@
     }
     .menu-container {
         display: flex;
-    }
-    .menu-container ul {
-        display: flex;
+        justify-content: flex-end;
         align-items: center;
-        list-style: none;
-    }
-    .menu-container ul li {
-        float:left;
-        color:#333;
-        cursor:pointer;
-        position: relative;
-    }
-    .menu-container ul li a {
-        text-decoration: none;
-        color: #64FFDA;
-    }
-    ul li:before{
+      }
+      .scroll-button {
+          background-color: #112240;
+          color:#CCD6F6;
+          font-weight: bold;
+          cursor:pointer;
+          position: relative;
+          border: none;
+      }
+      .scroll-button:hover {
+          color: #64FFDA;
+      }
+      .scroll-button:before {
         content:'';
         position: absolute;
-    }
-    ul li:after{
-        content:'';
-        position: absolute;
-    }
+      }
+      .scroll-button:after {
+          content:'';
+          position: absolute;
+      }
 /* FIN HEADER */
 
 
@@ -143,13 +178,16 @@
         display: flex;
     }
     .btn-home {
-        display: flex;
+        cursor: pointer;
         background-color: #0A192F;
-        border-color: #64FFDA;
+        color: #CCD6F6;
     }
-    .btn-home a {
-        color: #64FFDA;
+    .btn-home:hover {
+        background-color: #112240;
+        color: #64ffda;
+        border-color: #64ffda;
     }
+
 /* END HOME */
 
 
@@ -159,35 +197,29 @@
     }
     .aboutme-box{
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
     }
-    .aboutme-t {
+    .aboutme-txt {
         display: flex;
         flex-direction: column;
     }
-    .aboutme-t p {
-        color: #8892B0;
-    }
-    .aboutme-b {
+    .aboutme-btn {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .btn-aboutme {
-        display: flex;
-        justify-content: center;
+    .redirect-btn,
+    .download-btn {
+        cursor: pointer;
+        background-color: #0A192F;
+        color: #CCD6F6;
+    }
+
+    .redirect-btn:hover,
+    .download-btn:hover {
         background-color: #112240;
-    }
-    .btn-aboutme a {
-        text-decoration: none;
-        color: #8892B0;
-    }
-    .btn-aboutme a:hover {
-        text-decoration: none;
         color: #64ffda;
-    }
-    .btn-aboutme:hover {
-        background-color: #112240;
+        border-color: #64ffda;
     }
 /* END ABOUT ME */
 
@@ -565,22 +597,25 @@ footer p  {
         margin-top: 0px;
         transform: rotate(-405deg);
     }
-    .menu-container ul {
+    .menu-container {
         margin: 0;
         padding: 0;
     }
-    .menu-container ul li {
-    font-weight: bold;
-    margin-right: 10px;
-    padding:7px 10px;
-    transition:.5s;
-
+    .menu-container {
+        width: 70%;
+        min-width:;
+        max-width:;
+        gap:1em;
     }
-    .menu-container ul li a {
-        font-size: 1.2rem;
+    .scroll-button {
+        width: 120px;
+        height: 50px;
+        padding:1em;
+        transition:.5s;
+        font-size: 1rem;
         font-weight: 500;
     }
-    ul li:before{
+    .scroll-button:before {
         top:-2px;
         left:-2px;
         width:0%;
@@ -590,7 +625,7 @@ footer p  {
         border-bottom:2px solid transparent;
         transition:.5s;
     }
-    ul li:after{
+    .scroll-button:after {
         top:-2px;
         right:-2px;
         width:0;
@@ -600,20 +635,20 @@ footer p  {
         border-top:2px solid transparent;
         transition:.5s;
     }
-    ul li:hover:before{
+    .scroll-button:hover:before {
         top:68%;
         width:70%;
         height:30%;
         border-left:2px solid #64FFDA;
         border-bottom:2px solid #64FFDA;
     }
-    ul li:hover:after{
+    .scroll-button:hover:after {
         width:70%;
         height:30%;
         border-right:2px solid #64FFDA;
         border-top:2px solid #64FFDA;
     }
-/* FIN HEADER */
+  /* FIN HEADER */
 
 
 /* HOME */
@@ -643,7 +678,7 @@ footer p  {
         margin: 0;
     }
     .home-t p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 100;
         line-height: 1.5em;
     }
@@ -652,11 +687,12 @@ footer p  {
         width: 60%;
     }
     .btn-home {
-        width: 15%;
-        padding: 1em;
-        border-radius: 10px;
+        border: 2px solid #8892B0;
+        border-radius: 6px;
+        width: 150px;
+        margin: 10px;
+        padding: 10px 20px;
         font-size: 1rem;
-        font-weight: 500;
     }
 /* END HOME */
 
@@ -665,43 +701,35 @@ footer p  {
     .aboutme-cont {
         min-width: 1024px;
         max-width: 1920px;
-        gap: 1em;
     }
     .aboutme-box{
         margin: auto;
         width: 60%;
-        gap: 3em;
     }
-    .aboutme-t {
+    .aboutme-txt {
         width: 70%;
         margin: auto;
         gap: 1em;
     }
-    .aboutme-t p {
-        max-width: 700px;
-        font-size: 1.2rem;
+    .aboutme-txt p {
+        font-size: 1.3rem;
         font-weight: 100;
         line-height: 1.5em;
         margin: 0;
     }
-    .aboutme-b { 
+    .aboutme-btn { 
         width: 30%;
         margin: auto;
         gap: 1em;
     }
-    .btn-aboutme {
-        width: 120px;
-        border: 1px solid #8892B0;
+    .redirect-btn,
+    .download-btn {
+        border: 2px solid #8892B0;
         border-radius: 6px;
-        margin: 1em;
-        padding: 1.5em;
-        gap: 1em;
-    }
-    .btn-aboutme:hover {
-        border: 1px solid #64ffda;
-        border-radius: 6px;
-        padding: 1.2em;
-        gap: 1em;
+        width: 150px;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 /* END ABOUT ME */
 

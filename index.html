@@ -22,13 +22,14 @@
                 <span class='menu-button'></span>
             </label>
             <nav class="menu-container">
-                <ul class="menu">
-                    <li><a href="#home-section">À propos</a></li>
-                    <li><a href="#aboutme-section">Expérience</a></li>
-					<li><a href="#work-section">Work</a></li>
-                    <li><a href="#project-section">Portfolio</a></li>
-                    <li><a href="#contact-section">Contact</a></li>
-                </ul>
+
+				<button class="scroll-button" onclick="scrollToDiv('home-section')">Accueil</button>
+				<button class="scroll-button" onclick="scrollToDiv('aboutme-section')">À propos</button>
+				<button class="scroll-button" onclick="scrollToDiv('exp-section')">Expériences</button>
+				<button class="scroll-button" onclick="scrollToDiv('work-section')">Work</button>
+				<button class="scroll-button" onclick="scrollToDiv('project-section')">Portfolio</button>
+				<button class="scroll-button" onclick="scrollToDiv('contact-section')">Contact</button>
+
             </nav>
 			
 		</header>
@@ -77,7 +78,7 @@
 
 				<div class="aboutme-box">
 
-					<div class="aboutme-t">
+					<div class="aboutme-txt">
 
 						<p>Salut ! Je m’appelle Arthur Selva et j’adore créer des choses qui restent sur internet.
 							Mon interet pour le développement web a commencé en 2007 au travers du Site du Zéro avec
@@ -93,16 +94,19 @@
 	
 					</div>
 					
-					<div class="aboutme-b">
+
+
+					<div class="aboutme-btn">
 						
-						<button class="btn-aboutme"><a href="img/cvwd.pdf" download="VotreCV.pdf" class="bouton-telechargement">CV</a></button>
-	
-						<button class="btn-aboutme"><a href="https://www.linkedin.com/in/arthurselvafichepain/" target="_blank">Linkedin</a></button>
+						<button class="redirect-btn" onclick="window.open('linkedin.com/in/arthurselvafichepain/', '_blank')">Linkedin</button>
 						
-						<button class="btn-aboutme"><a href="https://github.com/Kalutos" target="_blank">Github</a></button>
+						<button class="redirect-btn" onclick="window.open('github.com/Kalutos', '_blank')">Github</button>
 						
-						<button class="btn-aboutme"><a href="https://stackoverflow.com/users/22452196/arthur" target="_blank">StackOverflow</a></button>
+						<button class="redirect-btn" onclick="window.open('stackoverflow.com/users/22452196/arthur', '_blank')">StackOverflow</button>
+						
+						<a href="img/cvwd.pdf" download="VotreCV.pdf"><button class="download-btn">Télécharger CV</button></a>
 					
+
 					</div>
 
 				</div>
@@ -121,7 +125,7 @@
 			<div class="exp-cont">
 				
 				<div class="exp-table">
-					
+
 					<div class="exp-type">
 		
 						<button id="exp-btn-exp" class="exp-btn-type">Expériences Professionnelles</button>
@@ -1421,5 +1425,6 @@
 		<script src="https://kit.fontawesome.com/cd2ba50a4e.js" crossorigin="anonymous"></script>
 		<script src="js/menu-responsive.js"></script>
 		<script src="js/tableau-work.js"></script>
+		<script src="js/ancre-redirection.js"></script>
 
 </html>
