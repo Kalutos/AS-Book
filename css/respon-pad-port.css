@@ -1,18 +1,16 @@
 /* Ajoutez vos styles CSS pour les tablettes ici */
-@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 /* Ajoutez vos styles CSS pour les tablettes */
     main {
         margin-top: 10em;
     }
     .ancre-title {
-        width: 100%;
         min-width: 768px;
         max-width: 1023px;
     }
     .ancre-title h2 {
         margin: auto;
         width: 90%;
-        color: #CCD6F6;
         padding-top: 4em;
         padding-bottom: 2em;
     }
@@ -60,20 +58,56 @@
         padding: 0;
     }
     .menu-container ul li {
-        margin-left: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    padding:7px 10px;
+    transition:.5s;
+
     }
     .menu-container ul li a {
         font-size: 1.2rem;
         font-weight: 500;
+    }
+    ul li:before{
+        top:-2px;
+        left:-2px;
+        width:0%;
+        height:100%;
+        border:2px solid transparent;
+        border-left:2px solid transparent;
+        border-bottom:2px solid transparent;
+        transition:.5s;
+    }
+    ul li:after{
+        top:-2px;
+        right:-2px;
+        width:0;
+        height:100%;
+        border:2px solid transparent;
+        border-right:2px solid transparent;
+        border-top:2px solid transparent;
+        transition:.5s;
+    }
+    ul li:hover:before{
+        top:68%;
+        width:70%;
+        height:30%;
+        border-left:2px solid #64FFDA;
+        border-bottom:2px solid #64FFDA;
+    }
+    ul li:hover:after{
+        width:70%;
+        height:30%;
+        border-right:2px solid #64FFDA;
+        border-top:2px solid #64FFDA;
     }
 /* FIN HEADER */
 
 
 /* HOME */
     .home-cont {
-        width: 1023px;
         min-width: 768px;
-        max-width: 80%;
+        max-width: 1023px;
         gap: 2em;
     }
     .home-t {
@@ -108,7 +142,7 @@
     .btn-home {
         width: 15%;
         padding: 1em;
-        border-radius: 5%;
+        border-radius: 10px;
         font-size: 1rem;
         font-weight: 500;
     }
@@ -117,15 +151,17 @@
 
 /* ABOUT ME */
     .aboutme-cont {
-        flex-direction: column;
-        min-width: 780px;
-        max-width: 1010px;
+        min-width: 768px;
+        max-width: 1023px;
         gap: 1em;
     }
-
-    .aboutme-t {
-        width: 80%;
+    .aboutme-box{
+        flex-direction: column;
         margin: auto;
+        width: 80%;
+        gap: 3em;
+    }
+    .aboutme-t {
         gap: 1em;
     }
     .aboutme-t p {
@@ -135,12 +171,13 @@
         margin: 0;
     }
     .aboutme-b {
-        flex-direction: row;    
+        flex-direction: row;  
+        justify-content: center;  
         margin-top: 2em;
         gap: 2em;
     }
     .btn-aboutme {
-        width: 10%;
+        width: 120px;
         border: 1px solid #8892B0;
         border-radius: 6px;
         padding: 1.2em;
@@ -157,33 +194,26 @@
 
 /* EXPERIENCE */
     .exp-cont {
-        margin: auto;
         min-width: 780px;
-        max-width: 1010px;
+        max-width: 1023px;
     }
     .exp-type {
         margin: auto;
-        width: 850px;
+        width: 80%;
         min-width: 600px;
-        max-width: 80%;
+        max-width: 950px;
     }
     .exp-btn-type {
-        margin: auto;
-        width: 340px;
-        min-width: 300px;
-        max-width: 50%;
+        width: 50%;
         border: 1px solid #8892B0;
         padding: 1em;
         font-size: 1rem;
     }
-    .exp-btn-type:hover {
-        padding: 1em;
-    }
     .exp-column {
         margin: auto;
-        width: 850px;
+        width: 80%;
         min-width: 600px;
-        max-width: 80%;
+        max-width: 950px;
     }
     .exp-choice {
         border: 1px solid #8892B0;
@@ -259,7 +289,6 @@
 
 /* WORK */
     .work-cont {
-        width: 100%;
         min-width: 768px;
         max-width: 1023px;
     }
@@ -320,7 +349,6 @@
 
 /* PROJECT */
     .project-cont {
-        width: 100%;
         min-width: 768px;
         max-width: 1023px;
     }
@@ -388,15 +416,13 @@
 
 /* CONTACT */
     .form-cont {
-        width: 100%;
         min-width: 768px;
         max-width: 1023px;
     }
     .formulaire {
-        width: 750px;
-        min-width: 600px;
-        max-width: 80%;
-        border: 1px solid#8892B0;
+        margin: auto;
+        width: 80%;
+        border: 1px solid #8892B0;
         border-radius: 3%;
         gap: 2em;
     }
