@@ -1,106 +1,20 @@
 /* Ajoutez vos styles CSS pour les téléphones F-Portrait ici */
 @media only screen and (max-width: 767px) and (orientation: portrait){
 /* Ajoutez vos styles CSS pour les téléphones mobiles ici */
-main {
-    margin-top: 10em;
-}
-.ancre-title {
-    min-width: 768px;
-    max-width: 1023px;
-}
-.ancre-title h2 {
-    margin: auto;
-    width: 90%;
-    color: #CCD6F6;
-    padding-top: 4em;
-    padding-bottom: 2em;
-}
-/* HEADER */
-    header {
-        width: 100%;
-        padding: 1em;
-    
+    main {
+        margin-top: 10em;
     }
-    .logo {
-        height: 80px;
-        align-items: center;
-        display: flex;
+    .ancre-title {
+        min-width: 768px;
+        max-width: 1023px;
     }
-    .logo img {
-        width: 100%;
-        max-width: 200px;
+    .ancre-title h2 {
+        margin: auto;
+        width: 90%;
+        color: #CCD6F6;
+        padding-top: 4em;
+        padding-bottom: 2em;
     }
-    .menu-toggle {
-        display: flex;
-    }
-
-    .menu-container {
-        display: none;
-        position: absolute;
-        top: 80px; /* Modifier la valeur pour correspondre à la hauteur de votre header */
-        left: 0;
-        background-color: #112240;
-        width: 100%;
-        padding: 1em;
-        z-index: 1000;
-    }
-
-    .menu-container.active {
-        display: flex;
-    }
-    .menu-container ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .menu-container ul li {
-        margin: 10px 0;
-    }
-
-    .menu-button-container {
-        display: flex;
-        margin: 0;
-    }
-    .menu-button,
-    .menu-button::before,
-    .menu-button::after {
-        display: block;
-        background-color: #c6c6c6;
-        position: absolute;
-        height: 4px;
-        width: 30px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 2px;
-    }
-
-    .menu-button::before {
-        content: '';
-        margin-top: -8px;
-    }
-
-    .menu-button::after {
-        content: '';
-        margin-top: 8px;
-    }
-
-    #menu-toggle:checked + .menu-button-container .menu-button::before {
-        margin-top: 0px;
-        transform: rotate(405deg);
-    }
-
-    #menu-toggle:checked + .menu-button-container .menu-button {
-        background: rgba(255, 255, 255, 0);
-    }
-
-    #menu-toggle:checked + .menu-button-container .menu-button::after {
-        margin-top: 0px;
-        transform: rotate(-405deg);
-    }
-
-/* FIN HEADER */
-
-
 /* HOME */
     .home-cont {
         min-width: 780px;

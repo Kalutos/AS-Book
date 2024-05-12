@@ -14,98 +14,7 @@
         padding-top: 4em;
         padding-bottom: 2em;
     }
-    header {
-        width: 100%;
-        height: 80px;
-        z-index: 1;
-    }
-    .logo {
-        margin: 0 15px;
-    }
-    .logo img {
-        width: 100%;
-        max-width: 250px;
-    }
-    .menu-button-container {
-        height: 100%;
-        width: 30px;
-    }
-    .menu-button,
-    .menu-button::before,
-    .menu-button::after {
-        height: 4px;
-        width: 30px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 2px;
-    }
-    .menu-button::before {
-        margin-top: -8px;
-    }
-    .menu-button::after {
-        margin-top: 8px;
-    }
-    #menu-toggle:checked + .menu-button-container .menu-button::before {
-        margin-top: 0px;
-        transform: rotate(405deg);
-    }
-    #menu-toggle:checked + .menu-button-container .menu-button::after {
-        margin-top: 0px;
-        transform: rotate(-405deg);
-    }
-    .menu-container {
-        margin: 0;
-        padding: 0;
-    }
-    .menu-container {
-        width: 70%;
-        min-width:;
-        max-width:;
-        gap:1em;
-    }
-    .scroll-button {
-        width: 120px;
-        height: 50px;
-        padding:1em;
-        transition:.5s;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    .scroll-button:before {
-        top:-2px;
-        left:-2px;
-        width:0%;
-        height:100%;
-        border:2px solid transparent;
-        border-left:2px solid transparent;
-        border-bottom:2px solid transparent;
-        transition:.5s;
-    }
-    .scroll-button:after {
-        top:-2px;
-        right:-2px;
-        width:0;
-        height:100%;
-        border:2px solid transparent;
-        border-right:2px solid transparent;
-        border-top:2px solid transparent;
-        transition:.5s;
-    }
-    .scroll-button:hover:before {
-        top:68%;
-        width:70%;
-        height:30%;
-        border-left:2px solid #64FFDA;
-        border-bottom:2px solid #64FFDA;
-    }
-    .scroll-button:hover:after {
-        width:70%;
-        height:30%;
-        border-right:2px solid #64FFDA;
-        border-top:2px solid #64FFDA;
-    }
-/* FIN HEADER */
-
-
+    
 /* HOME */
     .home-cont {
         min-width: 768px;
@@ -133,7 +42,7 @@
         margin: 0;
     }
     .home-t p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 100;
         line-height: 1.5em;
     }
@@ -142,11 +51,12 @@
         width: 80%;
     }
     .btn-home {
-        width: 15%;
-        padding: 1em;
-        border-radius: 10px;
+        border: 2px solid #8892B0;
+        border-radius: 6px;
+        width: 120px;
+        margin: 10px;
+        padding: 10px 20px;
         font-size: 1rem;
-        font-weight: 500;
     }
 /* END HOME */
 
@@ -161,42 +71,41 @@
         flex-direction: column;
         margin: auto;
         width: 80%;
-        gap: 3em;
-    }
-    .aboutme-t {
         gap: 1em;
     }
-    .aboutme-t p {
-        font-size: 1.2rem;
+    .aboutme-txt {
+        width: 80%;
+        margin: auto;
+        gap: 1em;
+    }
+    .aboutme-txt p {
+        font-size: 1rem;
         font-weight: 100;
-        line-height: 1.5em;
+        line-height: 1.2em;
         margin: 0;
     }
-    .aboutme-b {
+    .aboutme-btn {
         flex-direction: row;  
         justify-content: center;  
-        margin-top: 2em;
-        gap: 2em;
-    }
-    .btn-aboutme {
-        width: 120px;
-        border: 1px solid #8892B0;
-        border-radius: 6px;
-        padding: 1.2em;
+        width: 80%;
+        margin: auto;
         gap: 1em;
     }
-    .btn-aboutme:hover {
-        border: 1px solid #64ffda;
+    .redirect-btn,
+    .download-btn {
+        border: 2px solid #8892B0;
         border-radius: 6px;
-        padding: 1.2em;
-        gap: 1em;
+        width: 150px;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 /* END ABOUT ME */
 
 
 /* EXPERIENCE */
     .exp-cont {
-        min-width: 780px;
+        min-width: 768px;
         max-width: 1023px;
     }
     .exp-table {
@@ -217,9 +126,9 @@
     }
     .exp-column {
         margin: auto;
-        width: 80%;
+        width: 1000px;
         min-width: 600px;
-        max-width: 950px;
+        max-width: 80%;
     }
     .exp-choice {
         border: 1px solid #8892B0;
