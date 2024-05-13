@@ -273,9 +273,8 @@
         gap: 1em;
     }
     .project-file {
-        width: 300px;
-        min-width: 250px;
-        max-width: 25%;
+        flex-grow: 1;
+        flex-basis: 250px;
     }
     .project-head {
         width: 100%;
