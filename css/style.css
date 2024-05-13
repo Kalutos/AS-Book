@@ -69,44 +69,40 @@
     a {
         text-decoration: none;
     }
-    /* PAGINATION AREA */
-        .ancre-title {
-            display: flex;
-        }
-        .ancre-title h2 {
-            color: #CCD6F6;
-        }
-        .heading-pagination {
-            color: #64FFDA;
-        }
-    /* END PAGINATION AREA */
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .ancre-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .ancre-title h2 {
+        color: #CCD6F6;
+    }
+    .heading-pagination {
+        color: #64FFDA;
+    }
 
 /* END OPTION GENERAL */
 
 
 /* HOME */
-    .home-cont {
+    .home-cont  {
         display: flex;
         flex-direction: column;
     }
-    .home-t {
-        display: flex;
-        flex-direction: column;
-    }
-    .home-t h1 {
+    .home-cont h1 {
         color: #64FFDA;
     }
-    .home-t h2 {
+    .home-cont h2 {
         color: #e5e5e5;
     }
-    .home-t h3 {
+    .home-cont h3 {
         color: #8892b0;
     }
-    .home-t p {
+    .home-cont p {
         color: #CCD6F6;
-    }
-    .home-btn{
-        display: flex;
     }
     .btn-home {
         cursor: pointer;
@@ -118,19 +114,13 @@
         color: #64ffda;
         border-color: #64ffda;
     }
-    .btn-home a {
-        text-decoration: none;
-    }
 /* END HOME */
 
 
 /* ABOUT ME */
     .aboutme-cont {
         display: flex;
-    }
-    .aboutme-box{
-        display: flex;
-        flex-wrap: wrap;
+        align-items: center;
     }
     .aboutme-txt {
         display: flex;
@@ -160,9 +150,6 @@
 /* EXPERIENCE */
     .exp-cont {
         display: flex;
-    }
-    .exp-table {
-        display: flex;
         flex-direction: column;
     }
     .exp-type {
@@ -172,6 +159,7 @@
     .exp-btn-type {
         border: none;
         background-color: #0A192F;
+        border: 1px solid #8892B0;
         color: #8892B0;
     }
     .exp-btn-type:hover {
@@ -184,7 +172,8 @@
     }
     .exp-choice {
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
+        border: 1px solid #8892B0;
         border-top: none;
     }
     .contenu {
@@ -261,9 +250,6 @@
 /* WORK */
     .work-cont {
         display: flex;
-    }
-    .w-fig-box {
-        display: flex;
         flex-direction: column;
     }
     .work-fig-t1, 
@@ -322,9 +308,6 @@
 /* PROJECT */
     .project-cont {
         display: flex;
-    }
-    .box-files{
-        display: flex;
         flex-wrap: wrap;
     }
     .project-file {
@@ -381,9 +364,7 @@
 
 
 /* CONTACT */
-    #contact-section p {
-        display: flex;
-    }
+
     .form-cont {
         display: flex;
     }
@@ -400,6 +381,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+    .form-ask div p {
+        display: flex;
     }
     label {
         display: flex;
@@ -472,56 +456,54 @@ footer p  {
 
 
 /* Ajoutez vos styles CSS pour les écrans d'ordinateur ici */
-@media only screen and (min-width: 1024px) and (max-width: 1920px){
+@media only screen and (min-width: 1024px) {
 /* Ajoutez vos styles CSS pour les écrans d'ordinateur ici */
     main {
-
+        margin-top: 10rem;
+    }
+    section {
+        margin: 0 auto;
+        width: calc(100% + 0vw);
+        margin-bottom: 1rem;
     }
     .ancre-title {
-        min-width: 1024px;
-        max-width: 1920px;
-    }
-    .ancre-title h2 {
         margin: auto;
-        width: 70%;
-        padding-top: 4em;
-        padding-bottom: 2em;
-    }
-    
-/* HOME */
-    .home-cont {
-        min-width: 1024px;
-        max-width: 1920px;
+        width: calc(80% + 0vw);
         gap: 2em;
     }
-    .home-t {
-        margin: auto;
-        width: 60%;
-        gap: 1em;
+    .ancre-title h2 {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
     }
-    .home-t h1 {
+
+/* HOME */
+    .home-cont {
+        margin: 0 auto;
+        width: calc(70% + 0vw);
+        gap: 1rem;
+    }
+    .home-cont h1 {
         font-size: 1.5rem;
         font-weight: 100;
         margin: 0;
     }
-    .home-t h2 {
+    .home-cont h2 {
         font-size: 5rem;
         font-weight: 600;
         margin: 0;
     }
-    .home-t h3 {
+    .home-cont h3 {
         font-size: 3.5rem;
         font-weight: 600;
         margin: 0;
     }
-    .home-t p {
+    .home-cont p {
         font-size: 1.3rem;
         font-weight: 100;
-        line-height: 1.5em;
+        line-height: 1.5rem;
     }
-    .home-btn {
-        margin: auto;
-        width: 60%;
+    .home-cont a {
+
     }
     .btn-home {
         border: 2px solid #8892B0;
@@ -537,16 +519,12 @@ footer p  {
 
 /* ABOUT ME */
     .aboutme-cont {
-        min-width: 1024px;
-        max-width: 1920px;
+        margin: 0 auto;
+        width: calc(60% + 0vw);
+        gap: 1rem;
     }
-    .aboutme-box{
-        margin: auto;
-        width: 60%;
-    }
-    .aboutme-txt {
-        width: 70%;
-        margin: auto;
+    .aboutme-txt:first-child { 
+        width: calc(80% - 20px);
         gap: 1em;
     }
     .aboutme-txt p {
@@ -555,9 +533,8 @@ footer p  {
         line-height: 1.5em;
         margin: 0;
     }
-    .aboutme-btn { 
-        width: 30%;
-        margin: auto;
+    .aboutme-btn:nth-child(2) { 
+        width: calc(30% - 20px);
         gap: 1em;
     }
     .redirect-btn,
@@ -574,33 +551,21 @@ footer p  {
 
 /* EXPERIENCE */
     .exp-cont {
-        min-width: 1024px;
-        max-width: 1920px;
-    }
-    .exp-table {
-        margin: auto;
-        width: 60%;
+        margin: 0 auto;
+        width: calc(60% + 0vw);
     }
     .exp-type {
-        margin: auto;
-        width: 1800px;
-        min-width: 600px;
-        max-width: 100%;
+        width: calc(80vw - 10vw);
     }
     .exp-btn-type {
         width: 50%;
-        border: 1px solid #8892B0;
         padding: 1em;
         font-size: 1rem;
     }
     .exp-column {
-        margin: auto;
-        width: 1800px;
-        min-width: 600px;
-        max-width: 100%;
+        width: calc(80vw - 10vw);
     }
     .exp-choice {
-        border: 1px solid #8892B0;
         width: 25%;
     }
     .exp-btn {
@@ -673,13 +638,9 @@ footer p  {
 
 /* WORK */
     .work-cont {
-        min-width: 1024px;
-        max-width: 1920px;
-    }
-    .w-fig-box {
-        margin: auto;
-        width: 60%;
-        gap: 3em;
+        margin: 0 auto;
+        width: calc(60% + 0vw);
+        gap: 1rem;
     }
     .work-fig-t1, 
     .work-fig-t2 {
@@ -733,17 +694,17 @@ footer p  {
 
 /* PROJECT */
     .project-cont {
-        min-width: 1024px;
-        max-width: 1920px;
+        margin: 0 auto;
+        width: calc(60% + 0vw);
+        gap: 1rem;
     }
     .box-files{
-        margin: auto;
-        width: 60%;
+        gap: 1em;
     }
     .project-file {
         margin: 1em;
         flex-grow: 1;
-        flex-basis: calc(33.33% - 20px);
+        flex-basis: calc(33.33% - 1em);
         min-width: 200px;
         max-width: 300px;
     }
@@ -801,8 +762,9 @@ footer p  {
 
 /* CONTACT */
     .form-cont {
-        min-width: 1024px;
-        max-width: 1920px;
+        margin: 0 auto;
+        width: calc(60% + 0vw);
+        gap: 1rem;
     }
     .formulaire {
         margin: auto;
@@ -895,8 +857,10 @@ footer p  {
 
 /* FOOTER */
     footer {
+        margin: 0 auto;
+        width: calc(100% + 0vw);
+        gap: 1rem;
         border-top: 1px solid #64ffda;
-        width: 100%;
         margin-top: 150px;
         height: 150px;
     }

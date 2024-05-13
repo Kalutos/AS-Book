@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
-		<link rel="stylesheet" type="text/css" href="css/respon-pad-port.css">
+		<link rel="stylesheet" type="text/css" href="css/respon-pad.css">
 		<link rel="stylesheet" type="text/css" href="css/respon-pad-land.css">
 		<link rel="stylesheet" type="text/css" href="css/respon-mob-land.css">
 		<link rel="stylesheet" type="text/css" href="css/respon-mob-port.css">
@@ -24,12 +24,12 @@
             </label>
             <nav class="menu-container">
 
-				<button class="scroll-button" onclick="scrollToDiv('home-section')">Accueil</button>
-				<button class="scroll-button" onclick="scrollToDiv('aboutme-section')">À propos</button>
-				<button class="scroll-button" onclick="scrollToDiv('exp-section')">Expériences</button>
-				<button class="scroll-button" onclick="scrollToDiv('work-section')">Work</button>
-				<button class="scroll-button" onclick="scrollToDiv('project-section')">Portfolio</button>
-				<button class="scroll-button" onclick="scrollToDiv('contact-section')">Contact</button>
+				<button class="scroll-button" onclick="scrollToDiv('#home-section')">Accueil</button>
+				<button class="scroll-button" onclick="scrollToDiv('#aboutme-section')">À propos</button>
+				<button class="scroll-button" onclick="scrollToDiv('#exp-section')">Expériences</button>
+				<button class="scroll-button" onclick="scrollToDiv('#work-section')">Work</button>
+				<button class="scroll-button" onclick="scrollToDiv('#project-section')">Portfolio</button>
+				<button class="scroll-button" onclick="scrollToDiv('#contact-section')">Contact</button>
 
             </nav>
 			
@@ -37,16 +37,16 @@
 
 		<main>
 		<!-- HOME AREA -->               
-			<div class="home-cont">
+			<section id="home-section">
 
-				<div class="home-t">
+				<div class="home-cont">
 
-					<h1 id="home-section">Bienvenue, je suis</h1>
+					<h1>Bienvenue, je suis</h1>
 
 					<h2>Arthur Selva.</h2>
 
 					<h3>Développeur web junior</h3>
-
+					
 					<p>Autodidacte, je suis passionné par le création d’expériences numériques.
 						Concrétement ce que j’aime c’est apprendre et partager différents langages
 						informatiques afin de concentrer mes résultats sur des produits accessibles
@@ -54,30 +54,26 @@
 						en temps partiel soit 10 mois en entreprise après les 2 mois de botcamps.
 					</p>
 
-				</div>
-
-				<div class="home-btn">
-
 					<a href="#portfolio-section">
 						<button class="btn-home">Portfolio</button>
 					</a>
 
 				</div>
 
-			</div>
+			</section>
 		<!-- END HOME AREA -->
 
 
 		<!-- ABOUT ME AREA -->
-			<div class="ancre-title" id="aboutme-section">
+			<section id="aboutme-section">
 
-				<h2><span class="heading-pagination">01.</span> A propos de moi</h2>
+				<div class="ancre-title">
 
-			</div>
+					<h2><span class="heading-pagination">01.</span> A propos de moi</h2>
 
-			<div class="aboutme-cont">
+				</div>
 
-				<div class="aboutme-box">
+				<div class="aboutme-cont">
 
 					<div class="aboutme-txt">
 
@@ -87,12 +83,12 @@
 							visuelle plurimédia, et après un changement de vie, je  développe mes compétences en continue
 							grâce à des M.O.O.C. et cours particuliers.
 						</p>
-	
+
 						<p> Mon objectif principale est d’ apprendre et partager différents langages informatiques 
 							afin de concentrer mes résultats sur des produits accessibles et centré sur l’humain 
 							pour une variété de clients.
 						</p>
-	
+
 					</div>
 					
 					<div class="aboutme-btn">
@@ -110,459 +106,459 @@
 
 				</div>
 
-			</div>
+			</section>
 		<!-- END ABOUT ME AREA -->
 
 
 		<!-- EXPERIENCES AREA -->
-			<div class="ancre-title" id="exp-section">
-						
-				<h2><span class="heading-pagination">02.</span>Expériences professionelles et formations</h2>
-			
-			</div>
-			
-			<div class="exp-cont">
+			<section id="exp-section">
+					
+				<div class="ancre-title">
+								
+						<h2><span class="heading-pagination">02.</span>Expériences professionelles et formations</h2>
 				
-				<div class="exp-table">
+				</div>
+
+				<div class="exp-cont">
 
 					<div class="exp-type">
-		
-						<button id="exp-btn-exp" class="exp-btn-type">Expériences Professionnelles</button>
-				
-						<button id="exp-btn-form" class="exp-btn-type">Formations</button>
-				
+
+							<button id="exp-btn-exp" class="exp-btn-type">Expériences Professionnelles</button>
+
+							<button id="exp-btn-form" class="exp-btn-type">Formations</button>
+
 					</div>
-				
+
 					<div class="exp-column">
-				
-						<div class="exp-choice">
-				
-							<div class="contenu" id="contenu-experiences">
-				
-								<button id="work-choice-mysticode" class="exp-btn">MystiCodeCollectif</button>
-				
-								<button id="work-choice-namastha" class="exp-btn">Namastha</button>
-				
-								<button id="work-choice-bluebuddy" class="exp-btn">BlueBuddy</button>
-				
-								<button id="work-choice-psj" class="exp-btn">Plateforme jeux</button>
-				
-								<button id="work-choice-ensmv" class="exp-btn">Ensmv</button>
-				
+
+							<div class="exp-choice">
+
+									<div class="contenu" id="contenu-experiences">
+
+											<button id="work-choice-mysticode" class="exp-btn">MystiCodeCollectif</button>
+
+											<button id="work-choice-namastha" class="exp-btn">Namastha</button>
+
+											<button id="work-choice-bluebuddy" class="exp-btn">BlueBuddy</button>
+
+											<button id="work-choice-psj" class="exp-btn">Plateforme jeux</button>
+
+											<button id="work-choice-ensmv" class="exp-btn">Ensmv</button>
+
+									</div>
+
+									<div class="contenu" id="contenu-formations">
+
+											<button id="work-choice-e42" class="exp-btn">École 42</button>
+
+											<button id="work-choice-opcr" class="exp-btn">OpenClassroom</button>
+
+											<button id="work-choice-cfdi" class="exp-btn">Campus FDI</button>
+
+									</div>
+
 							</div>
-				
-							<div class="contenu" id="contenu-formations">
-				
-								<button id="work-choice-e42" class="exp-btn">École 42</button>
-				
-								<button id="work-choice-opcr" class="exp-btn">OpenClassroom</button>
-				
-								<button id="work-choice-cfdi" class="exp-btn">Campus FDI</button>
-				
+
+							<div class="exp-txt">
+
+									<div id="work-txt-mysticode" class="exp-box">
+
+											<div class="box-head">
+
+													<h3>TheMystiCodeCollectif</h3>
+
+													<span class="reseaux-work"><a href="https://triangleoffensedigital.com/" target="_blank">@TheMystiCodeCollectif</a></span>
+											
+											</div>
+
+											<div class="box-body">
+													
+													<div class="box-body-d">
+
+															<span>Projet</span>
+
+															<span>07 Juin 2023</span>
+
+													</div>
+
+													<div class="box-body-t">
+
+															<ul>Objectifs Principaux :
+																	<li>- Création du Collectif TheMystiCodeCollectif.</li>
+																	<li>- Utilisation de Nextjs pour la création du site internet.</li>
+																	<li>- Création de multiple liens de réseaux sociaux.</li>
+																	<li>- Aggrandir notre réseaux partenaires/clients.</li>
+															</ul>
+
+													</div>
+
+											</div>
+
+											<div class="box-footer">
+
+													<p>
+															C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
+															leurs domaines. Le fait de ne pas être une entreprise dite traditionnelle est pour préserver 
+															une liberté de mouvement et d’action facilitant ainsi l’ adaptation aux projets des clients 
+															ou partenaires. Ainsi nos experts peuvent avoir l’opportunité de travailler en collaboration 
+															sur des projets qui les passionnents tout en leur permettant d’accroite leur propre entreprise 
+															personnelle au sein d'un écosystème dynamique. Chaque membre de TheMystiCodeCollectif est 
+															auto-entrepreneur et sa structure se fonde sur le système d’un side hustle.
+													</p>
+
+											</div>
+
+									</div>
+
+									<div id="work-txt-namastha" class="exp-box">
+
+											<div class="box-head">
+
+													<h3>Namastha</h3>
+
+													<span class="reseaux-work"><a href="#" target="_blank">@Namastha</a></span>
+													
+											</div>
+
+											<div class="box-body">
+
+													<div class="box-body-d">
+
+															<span>Projet personnel</span>
+
+															<span>Avril 2024</span>
+
+													</div>
+
+													<div class="box-body-t">
+															
+															<ul>Objectifs Principaux :
+																	<li>- Création du Collectif TheMystiCodeCollectif.</li>
+																	<li>- Utilisation de React pour la création du site internet.</li>
+																	<li>- Création de multiple liens de réseaux sociaux.</li>
+																	<li>- Aggrandir notre réseaux partenaires/clients.</li>
+															</ul>
+
+													</div>
+
+											</div>
+
+											<div class="box-footer">
+													
+													<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+															dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
+															massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
+															eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
+															in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+															Praesent egestas leo in pede.
+													</p>
+
+											</div>
+
+									</div>
+
+									<div id="work-txt-bluebuddy" class="exp-box">
+
+											<div class="box-head">
+													
+													<h3>BlueBuddy</h3>
+													
+													<span class="reseaux-work"><a href="#" target="_blank">@BlueBuddy</a></span>
+
+											</div>
+
+											<div class="box-body">
+
+													<div class="box-body-d">
+
+															<span>Projet personnel</span>
+
+															<span>Mai 2024</span>
+
+													</div>
+
+													<div class="box-body-t">
+															
+															<ul>Objectifs Principaux :
+																	<li>- Gestions de crise et tchat général</li>
+																	<li>- Journal alimentaire et émotionnel</li>
+																	<li>- Création d'objectifs hebdomadaires</li>
+																	<li>- Boîte à outils</li>
+															</ul>
+
+													</div>
+
+											</div>
+
+											<div class="box-footer">
+													
+													<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+															dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
+															massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
+															eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
+															in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+															Praesent egestas leo in pede.
+													</p>
+
+											</div>
+
+									</div>
+
+									<div id="work-txt-psj" class="exp-box">
+
+											<div class="box-head">
+
+													<h3>Plateforme Jeux Soluce</h3>
+
+													<span class="reseaux-work"><a href="#" target="_blank">@</a></span>
+
+											</div>
+
+											<div class="box-body">
+
+													<div class="box-body-d">
+
+															<span>Projet personnel</span>
+
+															<span>à venir</span>
+
+													</div>
+
+													<div class="box-body-t">
+															
+															<ul>Objectifs Principaux :
+																	<li>- Création du Collectif TheMystiCodeCollectif.</li>
+																	<li>- Utilisation de React pour la création du site internet.</li>
+																	<li>- Création de multiple liens de réseaux sociaux.</li>
+																	<li>- Aggrandir notre réseaux partenaires/clients.</li>
+															</ul>
+
+													</div>
+											</div>
+
+											<div class="box-footer">
+													
+													<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+															dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
+															massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
+															eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
+															in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+															Praesent egestas leo in pede.
+													</p>
+
+											</div>
+
+									</div>
+
+									<div id="work-txt-ensmv" class="exp-box">
+
+											<div class="box-head">
+
+													<h3>ENSMV</h3>
+													
+													<span class="reseaux-work"><a href="https://ensmv.com/" target="_blank">@ENSMV</a></span>
+
+
+											</div>
+
+											<div class="box-body">
+
+													<div class="box-body-d">
+
+															<span>Projet personnel</span>
+
+															<span>Octobre 2015 - Août 2017</span>
+
+													</div>
+
+													<div class="box-body-t">
+															
+															<ul>Objectifs Principaux :
+																	<li>- Création du Collectif TheMystiCodeCollectif.</li>
+																	<li>- Utilisation de React pour la création du site internet.</li>
+																	<li>- Création de multiple liens de réseaux sociaux.</li>
+																	<li>- Aggrandir notre réseaux partenaires/clients.</li>
+															</ul>
+
+													</div>
+
+											</div>
+
+											<div class="box-footer">
+													
+													<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+															dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
+															massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
+															eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
+															in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+															Praesent egestas leo in pede.
+													</p>
+
+											</div>
+
+									</div>
+
+									<div id="work-txt-e42" class="exp-box">
+
+											<div class="box-head">
+
+													<h3>École 42</h3>
+
+													<span class="reseaux-work"><a href="https://42.fr/" target="_blank">@École 42</a></span>
+
+											</div>
+
+											<div class="box-body">
+
+													<div class="box-body-d">
+
+															<span>Piscine école 42</span>
+
+															<span>Mars 2021</span>
+
+													</div>
+
+													<div class="box-body-t">
+															
+															<ul>Objectifs Principaux
+																	<li>Création du Collectif TheMystiCodeCollectif.</li>
+																	<li>Utilisation de React pour la création du site internet.</li>
+																	<li>Création de multiple liens de réseaux sociaux.</li>
+																	<li>Aggrandir notre réseaux partenaires/clients.</li>
+															</ul>
+
+													</div>
+
+											</div>
+
+											<div class="box-footer">
+													
+													<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+															dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
+															massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
+															eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
+															in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+															Praesent egestas leo in pede.
+													</p>
+
+											</div>
+
+									</div>
+
+									<div id="work-txt-opcr" class="exp-box">
+
+											<div class="box-head">
+
+													<h3>OpenClassroom</h3>
+
+													<span class="reseaux-work"><a href="https://openclassrooms.com/fr/" target="_blank">@OpenClassroom</a></span>
+
+											</div>
+
+											<div class="box-body">
+
+													<div class="box-body-d">
+
+															<span>Formation Développeur web junior</span>
+
+															<span>Janvier 2020</span>
+
+													</div>
+
+													<div class="box-body-t">
+															
+															<ul>Objectifs Principaux
+																	<li>Création du Collectif TheMystiCodeCollectif.</li>
+																	<li>Utilisation de React pour la création du site internet.</li>
+																	<li>Création de multiple liens de réseaux sociaux.</li>
+																	<li>Aggrandir notre réseaux partenaires/clients.</li>
+															</ul>
+
+													</div>
+
+											</div>
+
+											<div class="box-footer">
+
+													<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+															dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
+															massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
+															eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
+															in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+															Praesent egestas leo in pede.
+													</p>
+
+											</div>
+
+									</div>
+
+									<div id="work-txt-cfdi" class="exp-box">
+
+											<div class="box-head">
+
+													<h3>Campus FDI</h3>
+
+													<span class="reseaux-work"><a href="https://www.campusfonderiedelimage.org/" target="_blank">@Campus FDI</a></span>
+													
+											</div>
+
+											<div class="box-body">
+
+													<div class="box-body-d">
+
+															<span>Bac A.M.A</span>
+
+															<span>2015 - 2017</span>
+
+													</div>
+
+													<div class="box-body-t">
+															
+															<ul>Objectifs Principaux
+																	<li>Création du Collectif TheMystiCodeCollectif.</li>
+																	<li>Utilisation de React pour la création du site internet.</li>
+																	<li>Création de multiple liens de réseaux sociaux.</li>
+																	<li>Aggrandir notre réseaux partenaires/clients.</li>
+															</ul>
+
+													</div>
+
+											</div>
+
+											<div class="box-footer">
+
+													<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+															dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
+															massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
+															eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
+															in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
+															Praesent egestas leo in pede.
+													</p>
+
+											</div>
+
+									</div>
+
 							</div>
-	
-						</div>
-	
-						<div class="exp-txt">
-	
-							<div id="work-txt-mysticode" class="exp-box">
-				
-								<div class="box-head">
-				
-									<h3>TheMystiCodeCollectif</h3>
-				
-									<span class="reseaux-work"><a href="https://triangleoffensedigital.com/" target="_blank">@TheMystiCodeCollectif</a></span>
-								
-								</div>
-				
-								<div class="box-body">
-									
-									<div class="box-body-d">
-				
-										<span>Projet</span>
-				
-										<span>07 Juin 2023</span>
-				
-									</div>
-				
-									<div class="box-body-t">
-				
-										<ul>Objectifs Principaux :
-											<li>- Création du Collectif TheMystiCodeCollectif.</li>
-											<li>- Utilisation de Nextjs pour la création du site internet.</li>
-											<li>- Création de multiple liens de réseaux sociaux.</li>
-											<li>- Aggrandir notre réseaux partenaires/clients.</li>
-										</ul>
-				
-									</div>
-				
-								</div>
-				
-								<div class="box-footer">
-	
-									<p>
-										C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
-										leurs domaines. Le fait de ne pas être une entreprise dite traditionnelle est pour préserver 
-										une liberté de mouvement et d’action facilitant ainsi l’ adaptation aux projets des clients 
-										ou partenaires. Ainsi nos experts peuvent avoir l’opportunité de travailler en collaboration 
-										sur des projets qui les passionnents tout en leur permettant d’accroite leur propre entreprise 
-										personnelle au sein d'un écosystème dynamique. Chaque membre de TheMystiCodeCollectif est 
-										auto-entrepreneur et sa structure se fonde sur le système d’un side hustle.
-									</p>
-				
-								</div>
-				
-							</div>
-				
-							<div id="work-txt-namastha" class="exp-box">
-				
-								<div class="box-head">
-				
-									<h3>Namastha</h3>
-				
-									<span class="reseaux-work"><a href="#" target="_blank">@Namastha</a></span>
-									
-								</div>
-				
-								<div class="box-body">
-				
-									<div class="box-body-d">
-				
-										<span>Projet personnel</span>
-				
-										<span>Avril 2024</span>
-				
-									</div>
-				
-									<div class="box-body-t">
-										
-										<ul>Objectifs Principaux :
-											<li>- Création du Collectif TheMystiCodeCollectif.</li>
-											<li>- Utilisation de React pour la création du site internet.</li>
-											<li>- Création de multiple liens de réseaux sociaux.</li>
-											<li>- Aggrandir notre réseaux partenaires/clients.</li>
-										</ul>
-				
-									</div>
-				
-								</div>
-				
-								<div class="box-footer">
-									
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-										dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-										massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-										eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-										in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-										Praesent egestas leo in pede.
-									</p>
-				
-								</div>
-				
-							</div>
-				
-							<div id="work-txt-bluebuddy" class="exp-box">
-				
-								<div class="box-head">
-									
-									<h3>BlueBuddy</h3>
-									
-									<span class="reseaux-work"><a href="#" target="_blank">@BlueBuddy</a></span>
-				
-								</div>
-				
-								<div class="box-body">
-				
-									<div class="box-body-d">
-				
-										<span>Projet personnel</span>
-				
-										<span>Mai 2024</span>
-				
-									</div>
-				
-									<div class="box-body-t">
-										
-										<ul>Objectifs Principaux :
-											<li>- Gestions de crise et tchat général</li>
-											<li>- Journal alimentaire et émotionnel</li>
-											<li>- Création d'objectifs hebdomadaires</li>
-											<li>- Boîte à outils</li>
-										</ul>
-				
-									</div>
-				
-								</div>
-				
-								<div class="box-footer">
-									
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-										dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-										massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-										eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-										in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-										Praesent egestas leo in pede.
-									</p>
-				
-								</div>
-				
-							</div>
-				
-							<div id="work-txt-psj" class="exp-box">
-				
-								<div class="box-head">
-				
-									<h3>Plateforme Jeux Soluce</h3>
-				
-									<span class="reseaux-work"><a href="#" target="_blank">@</a></span>
-				
-								</div>
-				
-								<div class="box-body">
-	
-									<div class="box-body-d">
-				
-										<span>Projet personnel</span>
-				
-										<span>à venir</span>
-				
-									</div>
-				
-									<div class="box-body-t">
-										
-										<ul>Objectifs Principaux :
-											<li>- Création du Collectif TheMystiCodeCollectif.</li>
-											<li>- Utilisation de React pour la création du site internet.</li>
-											<li>- Création de multiple liens de réseaux sociaux.</li>
-											<li>- Aggrandir notre réseaux partenaires/clients.</li>
-										</ul>
-				
-									</div>
-								</div>
-				
-								<div class="box-footer">
-									
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-										dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-										massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-										eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-										in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-										Praesent egestas leo in pede.
-									</p>
-				
-								</div>
-				
-							</div>
-				
-							<div id="work-txt-ensmv" class="exp-box">
-				
-								<div class="box-head">
-				
-									<h3>ENSMV</h3>
-									
-									<span class="reseaux-work"><a href="https://ensmv.com/" target="_blank">@ENSMV</a></span>
-				
-				
-								</div>
-				
-								<div class="box-body">
-				
-									<div class="box-body-d">
-				
-										<span>Projet personnel</span>
-				
-										<span>Octobre 2015 - Août 2017</span>
-				
-									</div>
-				
-									<div class="box-body-t">
-										
-										<ul>Objectifs Principaux :
-											<li>- Création du Collectif TheMystiCodeCollectif.</li>
-											<li>- Utilisation de React pour la création du site internet.</li>
-											<li>- Création de multiple liens de réseaux sociaux.</li>
-											<li>- Aggrandir notre réseaux partenaires/clients.</li>
-										</ul>
-	
-									</div>
-				
-								</div>
-				
-								<div class="box-footer">
-									
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-										dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-										massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-										eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-										in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-										Praesent egestas leo in pede.
-									</p>
-				
-								</div>
-				
-							</div>
-				
-							<div id="work-txt-e42" class="exp-box">
-				
-								<div class="box-head">
-				
-									<h3>École 42</h3>
-				
-									<span class="reseaux-work"><a href="https://42.fr/" target="_blank">@École 42</a></span>
-				
-								</div>
-				
-								<div class="box-body">
-				
-									<div class="box-body-d">
-				
-										<span>Piscine école 42</span>
-				
-										<span>Mars 2021</span>
-				
-									</div>
-				
-									<div class="box-body-t">
-										
-										<ul>Objectifs Principaux
-											<li>Création du Collectif TheMystiCodeCollectif.</li>
-											<li>Utilisation de React pour la création du site internet.</li>
-											<li>Création de multiple liens de réseaux sociaux.</li>
-											<li>Aggrandir notre réseaux partenaires/clients.</li>
-										</ul>
-				
-									</div>
-				
-								</div>
-				
-								<div class="box-footer">
-									
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-										dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-										massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-										eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-										in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-										Praesent egestas leo in pede.
-									</p>
-				
-								</div>
-				
-							</div>
-				
-							<div id="work-txt-opcr" class="exp-box">
-				
-								<div class="box-head">
-				
-									<h3>OpenClassroom</h3>
-				
-									<span class="reseaux-work"><a href="https://openclassrooms.com/fr/" target="_blank">@OpenClassroom</a></span>
-				
-								</div>
-				
-								<div class="box-body">
-				
-									<div class="box-body-d">
-				
-										<span>Formation Développeur web junior</span>
-				
-										<span>Janvier 2020</span>
-				
-									</div>
-				
-									<div class="box-body-t">
-										
-										<ul>Objectifs Principaux
-											<li>Création du Collectif TheMystiCodeCollectif.</li>
-											<li>Utilisation de React pour la création du site internet.</li>
-											<li>Création de multiple liens de réseaux sociaux.</li>
-											<li>Aggrandir notre réseaux partenaires/clients.</li>
-										</ul>
-				
-									</div>
-				
-								</div>
-				
-								<div class="box-footer">
-	
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-										dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-										massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-										eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-										in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-										Praesent egestas leo in pede.
-									</p>
-				
-								</div>
-				
-							</div>
-				
-							<div id="work-txt-cfdi" class="exp-box">
-				
-								<div class="box-head">
-				
-									<h3>Campus FDI</h3>
-				
-									<span class="reseaux-work"><a href="https://www.campusfonderiedelimage.org/" target="_blank">@Campus FDI</a></span>
-									
-								</div>
-				
-								<div class="box-body">
-				
-									<div class="box-body-d">
-				
-										<span>Bac A.M.A</span>
-				
-										<span>2015 - 2017</span>
-				
-									</div>
-				
-									<div class="box-body-t">
-										
-										<ul>Objectifs Principaux
-											<li>Création du Collectif TheMystiCodeCollectif.</li>
-											<li>Utilisation de React pour la création du site internet.</li>
-											<li>Création de multiple liens de réseaux sociaux.</li>
-											<li>Aggrandir notre réseaux partenaires/clients.</li>
-										</ul>
-				
-									</div>
-				
-								</div>
-				
-								<div class="box-footer">
-	
-									<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-										dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-										massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-										eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-										in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-										Praesent egestas leo in pede.
-									</p>
-				
-								</div>
-				
-							</div>
-				
-						</div>
-				
+
 					</div>
 
 				</div>
 
-			
-			</div>
+			</section>
 		<!-- END EXPERIENCES AREA -->
 
+
 		<!-- WORK AREA -->
-			<div class="ancre-title" id="work-section">
+			<section id="work-section">
 
-				<h2><span class="heading-pagination">03.</span>Projets récents</h2>
+				<div class="ancre-title" >
 
-			</div>
+					<h2><span class="heading-pagination">03.</span>Projets récents</h2>
 
-			<div class="work-cont">
+				</div>
 
-				<div class="w-fig-box">
+				<div class="work-cont">
 
 					<figure class="work-fig-t1">
 
@@ -725,20 +721,20 @@
 
 				</div>
 
-			</div>
+			</section>
 		<!-- END WORK AREA -->
 
 
 		<!-- PROJECT AREA -->
-			<div class="ancre-title" id="project-section">
+			<section id="project-section">
 
-				<h2><span class="heading-pagination">04.</span>Autres projets</h2>
+				<div class="ancre-title" >
 
-			</div>
+					<h2><span class="heading-pagination">04.</span>Autres projets</h2>
 
-			<div class="project-cont">
+				</div>
 
-				<div class="box-files">
+				<div class="project-cont">
 
 					<div class="project-file"><!-- AS-BOOK-STATIQUE -->
 
@@ -1272,134 +1268,136 @@
 
 				</div>
 
-			</div>
+			</section>
 		<!-- END PROJECT AREA -->
 
 
 		<!-- CONTACT AREA -->
-			<div class="ancre-title" id="contact-section">
-				
-				<h2><span class="heading-pagination">05.</span>Entrer en contact</h2>
-				
-			</div>
+			<section id="contact-section">
 
-			<div class="form-cont">
+				<div class="ancre-title" >
 
-				<form action="/votre-action" method="post" class="formulaire" id="contactForm">
+					<h2><span class="heading-pagination">05.</span>Entrer en contact</h2>
 
-					<div class="form-ask">
-	
-						<p>Que vous ayez une question ou que vous souhaitiez simplement dire bonjour, ma boîte de réception est toujours ouverte. Je ferai de mon mieux pour vous répondre dans les plus bref délais !</p>
+				</div>
 
-						<div>
-	
-							<label for="nom">Nom* :</label>
-							<input type="text" id="nom" name="nom" required>
-	
-						</div>
-	
-	
-	
-						<div>
-							<label for="prenom">Prénom* :</label>
-							<input type="text" id="prenom" name="prenom" required>
-	
-						</div>
-	
-						<div>
-	
-							<label for="email">Email* :</label>
-							<input name="email" id="email" type="email" autocomplete="off" required>
-	
-						</div>
-	
-						<div>
-	
-							<label for="telephone">Mobile* :</label>
-							<input type="tel" id="telephone" name="telephone" required>
-	
-						</div>
-	
-						<div>
-	
-							<label for="objet">Objet* :</label>
-							<input type="text" id="objet" name="objet" required>
-	
-						</div>
-	
-						<div>
-	
-							<label for="message">Message* :</label>
-							<textarea id="message" name="message" rows="4" required></textarea>
-	
-						</div>
-	
-					</div>
-	
-					<div class="form-infos-pro">
-	
-						<div class="form-infos-txt">
-							
+				<div class="form-cont">
+
+					<form action="/votre-action" method="post" class="formulaire" id="contactForm">
+
+						<div class="form-ask">
+		
+							<p>Que vous ayez une question ou que vous souhaitiez simplement dire bonjour, ma boîte de réception est toujours ouverte. Je ferai de mon mieux pour vous répondre dans les plus bref délais !</p>
+
 							<div>
-	
-								<p>arthurslfpro@gmail.com</p>
-	
+		
+								<label for="nom">Nom* :</label>
+								<input type="text" id="nom" name="nom" required>
+		
 							</div>
-	
+		
+		
+		
 							<div>
-	
-								<p>06.59.77.11.44</p>
-	
+								<label for="prenom">Prénom* :</label>
+								<input type="text" id="prenom" name="prenom" required>
+		
 							</div>
-	
+		
 							<div>
-	
-								<p>95700 Roissy en France</p>
-	
+		
+								<label for="email">Email* :</label>
+								<input name="email" id="email" type="email" autocomplete="off" required>
+		
 							</div>
-	
-	
-	
+		
+							<div>
+		
+								<label for="telephone">Mobile* :</label>
+								<input type="tel" id="telephone" name="telephone" required>
+		
+							</div>
+		
+							<div>
+		
+								<label for="objet">Objet* :</label>
+								<input type="text" id="objet" name="objet" required>
+		
+							</div>
+		
+							<div>
+		
+								<label for="message">Message* :</label>
+								<textarea id="message" name="message" rows="4" required></textarea>
+		
+							</div>
+		
 						</div>
-	
-						<div class="form-icon-social">
-	
-							<a href="https://www.codepen.io/aselvaf" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-	
-							<a href="https://www.github.com/Kalutos" target="_blank"><i class="fa-brands fa-github"></i></a>
-	
-							<a href="https://www.linkedin.com/in/arthurselvafichepain/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-	
-	
+		
+						<div class="form-infos-pro">
+		
+							<div class="form-infos-txt">
+								
+								<div>
+		
+									<p>arthurslfpro@gmail.com</p>
+		
+								</div>
+		
+								<div>
+		
+									<p>06.59.77.11.44</p>
+		
+								</div>
+		
+								<div>
+		
+									<p>95700 Roissy en France</p>
+		
+								</div>
+		
+		
+		
+							</div>
+		
+							<div class="form-icon-social">
+		
+								<a href="https://www.codepen.io/aselvaf" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+		
+								<a href="https://www.github.com/Kalutos" target="_blank"><i class="fa-brands fa-github"></i></a>
+		
+								<a href="https://www.linkedin.com/in/arthurselvafichepain/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+		
+		
+							</div>
+		
 						</div>
-	
-					</div>
-	
-					<div class="check-answer">
-	
-						<div class="privacy-data">
-	
-								<input type="checkbox" id="accept" name="accept" required>
-								<label for="accept">En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la Politique de confidentialité.</label>
-	
+		
+						<div class="check-answer">
+		
+							<div class="privacy-data">
+		
+									<input type="checkbox" id="accept" name="accept" required>
+									<label for="accept">En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la Politique de confidentialité.</label>
+		
+							</div>
+		
+							<div class="form-box-btn">
+		
+								<a href="mailto:selva.arthur@gmail.com"><button type="submit" title="mail" class="contact-btn">Envoyer</button></a>
+		
+							</div>
+		
 						</div>
-	
-						<div class="form-box-btn">
-	
-							<a href="mailto:selva.arthur@gmail.com"><button type="submit" title="mail" class="contact-btn">Envoyer</button></a>
-	
-						</div>
-	
-					</div>
-	
-				</form>
-				
-				<div class="response" id="responseMessage"></div>
+		
+					</form>
+					
+					<div class="response" id="responseMessage"></div>
 
-			</div>
+				</div>
 
+			</section>
 		<!-- END CONTACT AREA -->
-
 		</main>
 
 		<footer><!-- FOOTER AREA -->

@@ -360,17 +360,8 @@
     .menu-container.active {
         display: flex;
         flex-direction: column;
+        gap: 1em;
     }
-    .menu-container ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .menu-container ul li {
-        margin: 10px 0;
-    }
-
     .menu-button-container {
         display: flex;
         margin: 0;
@@ -409,6 +400,47 @@
     #menu-toggle:checked + .menu-button-container .menu-button::after {
         margin-top: 0px;
         transform: rotate(-405deg);
+    }
+
+    .scroll-button {
+        width: 120px;
+        padding: 1em;
+        transition: .5s;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .scroll-button:before {
+        top: -2px;
+        left: -2px;
+        width: 0%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        transition: .5s;
+    }
+    .scroll-button:after {
+        top: -2px;
+        right: 0px;
+        width: 0;
+        height: 100%;
+        border: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-top: 2px solid transparent;
+        transition: .5s;
+    }
+    .scroll-button:hover:before {
+        top: 68%;
+        width: 70%;
+        height: 30%;
+        border-left: 2px solid #64FFDA;
+        border-bottom: 2px solid #64FFDA;
+    }
+    .scroll-button:hover:after {
+        width: 70%;
+        height: 30%;
+        border-right: 2px solid #64FFDA;
+        border-top: 2px solid #64FFDA;
     }
 }
 

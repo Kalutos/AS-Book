@@ -1,100 +1,95 @@
 /* Ajoutez vos styles CSS pour les téléphones F-Portrait ici */
-@media only screen and (max-width: 767px) and (orientation: portrait){
+@media only screen and (max-width: 767px) {
 /* Ajoutez vos styles CSS pour les téléphones mobiles ici */
     main {
-        margin-top: 10em;
+        margin: 0 auto;
+        width: calc(90% + 10vw);
+        padding-top: 10em;
+    }
+    section {
+        margin: 0 auto;
+        width: calc(80% + 20vw);
     }
     .ancre-title {
-        min-width: 768px;
-        max-width: 1023px;
+        width: calc(90% + 1vw);
+        gap: 2em;
     }
     .ancre-title h2 {
-        margin: auto;
-        width: 90%;
-        color: #CCD6F6;
         padding-top: 4em;
         padding-bottom: 2em;
     }
 /* HOME */
     .home-cont {
-        min-width: 780px;
-        max-width: 1010px;
-        gap: 2em;
-    }
-    .home-t {
-        margin: auto;
-        width: 80%;
+        margin: 0 auto;
+        width: calc(80% + 10vw);
         gap: 1em;
     }
-    .home-t h1 {
+    .home-cont h1 {
         font-size: 1.5rem;
         font-weight: 100;
         margin: 0;
     }
-    .home-t h2 {
+    .home-cont h2 {
         font-size: 5rem;
         font-weight: 600;
         margin: 0;
     }
-    .home-t h3 {
+    .home-cont h3 {
         font-size: 3.5rem;
         font-weight: 600;
         margin: 0;
     }
-    .home-t p {
-        font-size: 1.5rem;
+    .home-cont p {
+        font-size: 1.3rem;
         font-weight: 100;
         line-height: 1.5em;
     }
-    .home-btn {
-        width: 15%;
-        padding: 1em;
-        border-radius: 5%;
+    .home-cont a {
+
+    }
+    .btn-home {
+        border: 2px solid #8892B0;
+        border-radius: 6px;
+        width: 150px;
+        margin: 10px;
+        padding: 10px 20px;
         font-size: 1rem;
-        font-weight: 500;
     }
 /* END HOME */
 
 
 /* ABOUT ME */
     .aboutme-cont {
-        flex-direction: column;
-        min-width: 780px;
-        max-width: 1010px;
+        margin: 0 auto;
+        width: calc(80% + 10vw);
         gap: 1em;
     }
-
-    .aboutme-t {
-        width: 80%;
+    .aboutme-txt {
+        width: 70vw;
         margin: auto;
         gap: 1em;
     }
-    .aboutme-t p {
-        font-size: 1.2rem;
+    .aboutme-txt p {
+        font-size: 1.3rem;
         font-weight: 100;
         line-height: 1.5em;
         margin: 0;
     }
-    .aboutme-b {
-        flex-direction: row;    
-        margin-top: 2em;
-        gap: 2em;
-    }
-    .btn-aboutme {
-        width: 10%;
-        border: 1px solid #8892B0;
-        border-radius: 6px;
-        padding: 1.2em;
+    .aboutme-btn { 
+        width: 30vw;
+        margin: auto;
         gap: 1em;
     }
-    .btn-aboutme:hover {
-        border: 1px solid #64ffda;
+    .redirect-btn,
+    .download-btn {
+        border: 2px solid #8892B0;
         border-radius: 6px;
-        padding: 1.2em;
-        gap: 1em;
+        width: 150px;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 /* END ABOUT ME */
-
 
 /* EXPERIENCE */
     .exp-cont {
@@ -445,3 +440,10 @@
 /* END FOOTER */
 
 }
+
+@media screen and (max-width: 768px)
+@media screen and (max-width: 768px)
+@media screen and (max-width: 768px)
+@media screen and (max-width: 768px)
+@media screen and (max-width: 768px)
+@media screen and (max-width: 768px)
