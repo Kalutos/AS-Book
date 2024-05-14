@@ -252,78 +252,73 @@
 /* Ajoutez vos styles CSS pour les téléphones mobiles ici */
 
     header {
-        width: 100%;
-        padding: 1em;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 25%;
+        height: 100%;
     }
     .logo {
-        height: 80px;
-        align-items: center;
-        display: flex;
+        width: 30%;
+        min-width: 150px;
+        max-width: 300px;
     }
     .logo img {
         width: 100%;
-        max-width: 200px;
-    }
-    .menu-toggle {
-        display: flex;
-    }
-    .menu-container {
-        display: none;
-        position: absolute;
-        top: 80px; /* Modifier la valeur pour correspondre à la hauteur de votre header */
-        left: 0;
-        background-color: #112240;
-        width: 100%;
-        padding: 1em;
-        z-index: 1000;
-    }
-    .menu-container.active {
-        display: flex;
-    }
-    .menu-container ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .menu-container ul li {
-        margin: 10px 0;
     }
     .menu-button-container {
-        display: flex;
-        margin: 0;
-    }
-    .menu-button,
-    .menu-button::before,
-    .menu-button::after {
-        display: block;
-        background-color: #c6c6c6;
-        position: absolute;
-        height: 4px;
+        height: 100%;
         width: 30px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 2px;
     }
-    .menu-button::before {
-        content: '';
-        margin-top: -8px;
+    .menu-button {
+        display: none;
     }
-    .menu-button::after {
-        content: '';
-        margin-top: 8px;
+    .menu.hide {
+        transform: translateX(-100%); /* Menu glissant et disparaissant */
     }
-    #menu-toggle:checked + .menu-button-container .menu-button::before {
-        margin-top: 0px;
-        transform: rotate(405deg);
+    .menu-container {
+        flex-direction: column;
     }
-    #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
+    .scroll-button {
+        width: 120px;
+        padding: 1em;
+        transition: .5s;
+        font-size: 1rem;
+        font-weight: 500;
     }
-    #menu-toggle:checked + .menu-button-container .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
+    .scroll-button:before {
+        top: -2px;
+        left: -2px;
+        width: 0%;
+        height: 100%;
+        border: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        transition: .5s;
     }
-/* FIN HEADER */
+    .scroll-button:after {
+        top: -2px;
+        right: 0px;
+        width: 0;
+        height: 100%;
+        border: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-top: 2px solid transparent;
+        transition: .5s;
+    }
+    .scroll-button:hover:before {
+        top: 68%;
+        width: 70%;
+        height: 30%;
+        border-left: 2px solid #64FFDA;
+        border-bottom: 2px solid #64FFDA;
+    }
+    .scroll-button:hover:after {
+        width: 70%;
+        height: 30%;
+        border-right: 2px solid #64FFDA;
+        border-top: 2px solid #64FFDA;
+    }
 }
 
 

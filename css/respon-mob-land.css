@@ -2,8 +2,11 @@
 @media only screen and (max-width: 767px) and (orientation: landscape){
 /* Ajoutez vos styles CSS pour les téléphones mobiles ici */
  
+    body {
+        flex-direction: row;
+    }
     main {
-        margin-top: 5em;
+        width: calc(75% - 0vw);
     }
     .ancre-title {
         width: 90%;
@@ -11,279 +14,210 @@
         padding-bottom: 2em;
     }
 
-/* HOME */
-    .home-cont {
-        width: 80%;
+    section {
+        margin: 0 auto;
+        width: calc(100% + 0vw);
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        display: none;
+    }
+    .ancre-title {
         margin: auto;
+        width: calc(80% + 0vw);
         gap: 2em;
     }
-    .home-t {
-        gap: 1em;
+    .ancre-title h2 {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
     }
-    .home-t h1 {
+
+/* HOME */
+    .home-cont {
+        margin: 0 auto;
+        width: calc(70% + 0vw);
+        gap: 1rem;
+    }
+    .home-cont h1 {
         font-size: 1.5rem;
         font-weight: 100;
         margin: 0;
     }
-    .home-t h2 {
+    .home-cont h2 {
         font-size: 5rem;
         font-weight: 600;
         margin: 0;
     }
-    .home-t h3 {
+    .home-cont h3 {
         font-size: 3.5rem;
         font-weight: 600;
         margin: 0;
     }
-    .home-t p {
-        font-size: 1.5rem;
+    .home-cont p {
+        font-size: 1.3rem;
         font-weight: 100;
-        line-height: 1.5em;
-    }
-    .home-btn {
-        width: 80%;
+        line-height: 1.5rem;
     }
     .btn-home {
-        padding: 1em;
-        border-radius: 5%;
+        border: 2px solid #8892B0;
+        border-radius: 6px;
+        width: 150px;
+        margin: 1rem;
+        padding: 1rem;
         font-size: 1rem;
-        font-weight: 500;
     }
 /* END HOME */
 
 
 /* ABOUT ME */
     .aboutme-cont {
-        flex-direction: column;
-        width: 80%;
-        gap: 1em;
+        margin: 0 auto;
+        width: calc(60% + 0vw);
+        gap: 1rem;
     }
-
-    .aboutme-t {
-        gap: 1em;
+    .aboutme-txt:first-child { 
+        width: calc(80% - 20px);
+        gap: 1rem;
     }
-    .aboutme-t p {
-        font-size: 1.2rem;
+    .aboutme-txt p {
+        font-size: 1.3rem;
         font-weight: 100;
-        line-height: 1.5em;
+        line-height: 1.5rem;
         margin: 0;
     }
-    .aboutme-b {
-        margin-top: 2em;
-        gap: 2em;
-        padding-bottom: 2em;
+    .aboutme-btn:nth-child(2) { 
+        width: calc(30% - 20px);
+        gap: 1rem;
     }
-    .btn-aboutme {
-        background-color: #112240;
-        border: 1px solid #8892B0;
+    .redirect-btn,
+    .download-btn {
+        border: 2px solid #8892B0;
         border-radius: 6px;
-        padding: 1.2em;
-        gap: 1em;
-    }
-
-    .btn-aboutme:hover {
-        background-color: #112240;
-        border: 1px solid #64ffda;
-        border-radius: 6px;
-        padding: 1.2em;
-        gap: 1em;
+        width: 150px;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
     }
 /* END ABOUT ME */
 
 
 /* EXPERIENCE */
     .exp-cont {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 80%;
+        margin: 0 auto;
+        width: calc(60% + 0vw);
     }
     .exp-type {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 50px;
-        border: 1px solid #8892B0;
+        width: calc(80vw - 10vw);
     }
     .exp-btn-type {
-        border: none;
-        background-color: #0A192F;
-        color: #8892B0;
-        width: 50%;
-        padding: 1em;
+        width: 50vw;
+        padding: 1rem;
         font-size: 1rem;
-    }
-    .exp-btn-type:hover {
-        background-color: #233554;
-        color: #64FFDA;
-        padding: 1em;
     }
     .exp-column {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
+        width: calc(80vw - 10vw);
     }
     .exp-choice {
-        display: flex;
-        flex-direction: column;  
-        border: 1px solid #8892B0;
-        border-top: none;
-        width: 25%;
-    }
-    .contenu {
-        display: flex;
-        flex-direction: column;
+        width: calc(25vw - 0vw);
     }
     .exp-btn {
-        display: flex;
-        background-color: #0A192F;
-        color: #8892B0;
-        border: none;
         width: 100%;
-        padding: 1em;
-        border: 1px #0A192F;
+        padding: 1rem;
         font-size: 1rem;
-    }
-    .exp-btn:hover {
-        color: #64FFDA;
-        background-color: #233554;
     }
     .exp-txt {
-        display: flex;
-        width: 75%;
-    }
-    .exp-box {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        gap: 1em;
+        width: calc(75vw - 0vw);
     }
     .box-head {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        margin: auto;
-        gap: 1em;
+        gap: 1rem;
     }
-    .box-head h3 {
-        width: 50%;
-        font-size: 1rem;
-        margin-left: 1em;
-    }
-    .reseaux-work{
-        display: flex;
-        width: 50%;
-    }
-    .reseaux-work a {
-        color: #64FFDA;
-        font-size: 1rem;
-    }
-    .box-body {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-        gap: 1em;
-    }
-    .box-body-d {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1em;
-    }
-    .box-body-d span {
-        display: flex;
-        align-items: flex-start;
-    }
-    .box-body-t {
-        display: flex;
+    .box-head-t, .box-head-d {
         width: 100%;
     }
-    .box-body-t ul {
-        display: flex;
-        flex-direction: column;
-        color: #64ffda;
+    .box-head-t h3 {
         font-size: 1rem;
-        line-height: 1.5rem;
-        font-weight: 100;
+        padding: 1rem;
+    }
+    .box-head-t a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .box-head-d p {
+        font-size: 1rem;
         margin: 0;
-        padding: 0;
+        padding: 1rem;
     }
-    .box-body-t ul li{
-        display: flex;
-        flex-direction: column;
-        list-style-type: disclosure-closed;
-        color: #CCD6F6;
-        margin-left: 1em;
+    .box-body {
+        gap: 1rem;
     }
-
-    .box-footer {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
+    .box-body-t {
         margin: auto;
-        gap: 1em;
-    }
-    .box-footer p {
-        display: flex;
         width: 90%;
-        line-height: 1.5rem;
+        gap: 1rem;
+    }
+    .box-body ul {
         font-size: 1rem;
+        line-height: 1.5rem;
         font-weight: 100;
         margin: auto;
-        padding-bottom: 2em;
+    }
+    .box-body ul li{
+        padding-left: 1rem;
+    }
+    .box-body p {
+        padding: 1rem;
     }
 /* END EXPERIENCE */
 
 
 /* WORK */
     .work-cont {
-        width: 80%;
-        gap: 3em;
+        margin: 0 auto;
+        width: calc(70% + 0vw);
+        gap: 5rem;
     }
     .work-fig-t1, 
     .work-fig-t2 {
-        height: 400px;
-
+        width: calc(80% + 10vw);
     }
     .work-img {
-        width: 50%;
+        width: 60%;
+        height: auto;
+        overflow: hidden;
     }
     .work-img img {
         width: 100%;
-        height: 400px;
+        height: 100%;
+        object-fit: cover;
     }
     .work-des {
-        width: 50%;
+        width: calc(40% - 40px);
+        padding: 20px;
     }
     .wd-head {
-        width: 100%;
-        gap: 1em;
-    }
-    .wd-head-icon {
-        gap: 1em;
-        padding-left: 1em;
-    }
-
-    .wd-head-icon i {
-        font-size: 1.4rem;
+        margin-bottom: 10px;
     }
     .wd-head-t h3 {
         font-size: 1.8rem;
         font-weight: 500;
         margin: 0;
     }
+    .wd-head-icon {
+        gap: 1em;
+        padding-left: 1em;
+    }
+    .wd-head-icon i {
+        font-size: 1.4rem;
+    }
     .wd-body {
-        padding: 1em;
+        background-color: #112240; /* Couleur de fond semi-transparente */
         width: calc(100% - -150px); /* Largeur égale à 100% de la largeur parente moins 20px pour un léger débordement */
     }
     .wd-body p {
         font-size: 1rem;
         font-weight: 100;
+        margin: 1rem;
     }
     .wd-footer {
         gap: 1em;
@@ -464,14 +398,14 @@
 /* END CONTACT */
 
 
-/* FOOTER */
-    footer {
+/* FOOTER-RESPON*/
+    .footer-respon {
         width: 100%;
         margin-top: 150px;
         height: 150px;
     }
 
-    footer p  {
+    .footer-respon p  {
         font-size: 1rem;
     }
     .icone_social_footer {
