@@ -6,7 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
 		<link rel="stylesheet" type="text/css" href="css/respon-pad.css">
-		<link rel="stylesheet" type="text/css" href="css/respon-pad-land.css">
 		<link rel="stylesheet" type="text/css" href="css/respon-mob-land.css">
 		<link rel="stylesheet" type="text/css" href="css/respon-mob-port.css">
         <title>Arthur Selva</title>
@@ -27,8 +26,9 @@
             <label class='menu-button-container' for="menu-toggle">
 
                 <span class='menu-button'></span>
-				<span class="menu-show">Show</span>
-				<span class="menu-hide">Hide</span>
+
+				<a href="#" id="menu-hide">Cacher/montrer la sidebar</a>
+
             </label>
 
             <nav class="menu-container">
@@ -106,10 +106,13 @@
 						
 						<button class="redirect-btn" onclick="window.open('github.com/Kalutos', '_blank')">Github</button>
 						
-						<button class="redirect-btn" onclick="window.open('stackoverflow.com/users/22452196/arthur', '_blank')">StackOverflow</button>
-						
-						<a href="img/cvwd.pdf" download="VotreCV.pdf"><button class="download-btn">CV</button></a>
-					
+						<button class="redirect-btn" onclick="window.open('facebook.com/', '_blank')">Facebook</button>
+
+						<a href="img/cvwd.pdf" id="cv-download-link" download="VotreCV.pdf">
+
+							<button class="redirect-btn" onclick="window.open('facebook.com/', '_blank')">CV</button>
+
+						</a>				
 
 					</div>
 
@@ -1408,6 +1411,8 @@
 			</section>
 		<!-- END CONTACT AREA -->
 
+
+		<!-- END FOOTER-RESPON AREA -->
 			<div class="footer-respon">
 
 				<div>
@@ -1424,6 +1429,7 @@
 				</div>
 
 			</div>
+		<!-- END FOOTER-RESPON AREA -->
 
 		</main>
 
@@ -1450,7 +1456,7 @@
 		<script src="https://kit.fontawesome.com/cd2ba50a4e.js" crossorigin="anonymous"></script>
 		<script src="js/menu-responsive.js"></script>
 		<script src="js/tableau-work.js"></script>
-		<script src="js/ancre-redirection.js"></script>
+		<script src="js/redirect.js"></script>
 		<script src="js/show&hide.js"></script>
 
 </html>

@@ -1,49 +1,43 @@
 /* Ajoutez vos styles CSS pour les téléphones F-Portrait ici */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 360px) and (max-width: 767px) {
 /* Ajoutez vos styles CSS pour les téléphones mobiles ici */
-main {
-    margin-top: 10rem;
-}
-section {
-    margin: 0 auto;
-    width: calc(100% + 0vw);
-    margin-bottom: 1rem;
-}
-.ancre-title {
-    margin: auto;
-    width: calc(90% + 0vw);
-    gap: 2rem;
-}
-.ancre-title h2 {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-}
+    main {
+        margin-top: 10rem;
+    }
+    section {
+        width: calc(90% + 10vw);
+    }
+    .ancre-title {
+        width: calc(80% + 0vw);
+        gap: 2em;
+    }
+    .ancre-title h2 {
+        font-size: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 
-/* HOME */
+    p {
+        font-size: 0.8rem;
+        font-family: 'Inter';
+        font-weight: 100;
+        line-height: 1rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    /* HOME */
     .home-cont {
-        margin: 0 auto;
         width: calc(80% + 10vw);
         gap: 1rem;
     }
     .home-cont h1 {
-        font-size: 1.5rem;
-        font-weight: 100;
-        margin: 0;
+        font-size: 0.8rem;
     }
     .home-cont h2 {
-        font-size: 5rem;
-        font-weight: 600;
-        margin: 0;
+        font-size: 2.2rem;
     }
     .home-cont h3 {
-        font-size: 3.5rem;
-        font-weight: 600;
-        margin: 0;
-    }
-    .home-cont p {
-        font-size: 1.3rem;
-        font-weight: 100;
-        line-height: 1.5rem;
+        font-size: 1.5rem;
     }
     .btn-home {
         width: 150px;
@@ -51,172 +45,128 @@ section {
         padding: 1rem;
         font-size: 1rem;
     }
-/* END HOME */
+    /* END HOME */
 
 
-/* ABOUT ME */
-.aboutme-cont {
-    flex-direction: column;
-    gap: 1rem;
-}
-.aboutme-txt, .aboutme-btn {
-    margin: 0 auto;
-    width: calc(90% + 0vw);
-    gap: 1rem;
-}
-.aboutme-txt p {
-    font-size: 1.3rem;
-    font-weight: 100;
-    line-height: 1.5rem;
-    margin: 0;
-}
-.aboutme-btn {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-    width: calc(80% - 0vw);
-}
-.redirect-btn,
-.download-btn {
-    width: 150px;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1rem;
-}
-/* END ABOUT ME */
-
-/* EXPERIENCE */
-    .exp-cont {
-        margin: auto;
-        min-width: 780px;
-        max-width: 1010px;
+    /* ABOUT ME */
+    .aboutme-cont {
+        flex-direction: column;
+        width: calc(80% + 10vw);
+        gap: 1rem;
     }
-    .exp-type {
-        margin: auto;
-        width: 850px;
-        min-width: 600px;
-        max-width: 80%;
+    .aboutme-txt, .aboutme-btn { 
+        width: calc(80% - 0vw);
+        gap: 1rem;
     }
-    .exp-btn-type {
-        margin: auto;
-        width: 340px;
-        min-width: 300px;
-        max-width: 50%;
-        border: 1px solid #8892B0;
-        padding: 1em;
+    .aboutme-btn { 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutme-btn a { 
+        width: 150px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .redirect-btn,
+    .download-btn {
+        width: 150px;
+        margin: 1rem;
+        padding: 1rem;
         font-size: 1rem;
     }
-    .exp-btn-type:hover {
-        padding: 1em;
+    /* END ABOUT ME */
+
+
+    /* EXPERIENCE */
+    .exp-cont {
+        width: calc(80% + 10vw);
+    }
+    .exp-type {
+        width: calc(80vw - 10vw);
+    }
+    .exp-btn-type {
+        width: 50vw;
+        padding: 1rem;
+        font-size: 1rem;
     }
     .exp-column {
-        margin: auto;
-        width: 850px;
-        min-width: 600px;
-        max-width: 80%;
+        width: calc(80vw - 10vw);
     }
     .exp-choice {
-        border: 1px solid #8892B0;
-        width: 25%;
+        width: calc(25vw - 0vw);
     }
     .exp-btn {
         width: 100%;
-        padding: 1em;
-        border: 1px #0A192F;
+        padding: 1rem;
         font-size: 1rem;
     }
     .exp-txt {
-        width: 75%;
-    }
-    .exp-box {
-        width: 100%;
-        gap: 1em;
+        width: calc(75vw - 0vw);
     }
     .box-head {
-        width: 90%;
-        margin: auto;
-        gap: 1em;
+        gap: 1rem;
     }
-    .box-head h3 {
-        width: 50%;
+    .box-head-t, .box-head-d {
+        width: 100%;
+    }
+    .box-head-t h3 {
         font-size: 1rem;
-        margin-left: 1em;
+        padding: 1rem;
     }
-    .reseaux-work{
-        width: 50%;
+    .box-head-t a {
+        font-size: 1rem;
     }
-    .reseaux-work a {
+    .box-head-d p {
         font-size: 1rem;
     }
     .box-body {
-        width: 90%;
-        margin: auto;
-        gap: 1em;
-    }
-    .box-body-d {
-        gap: 1em;
+        gap: 1rem;
     }
     .box-body-t {
-        width: 100%;
+        width: 90%;
+        gap: 1rem;
     }
-    .box-body-t ul {
+    .box-body ul {
         font-size: 1rem;
         line-height: 1.5rem;
-        font-weight: 100;
-        margin: 0;
-        padding: 0;
     }
-    .box-body-t ul li{
-        color: #CCD6F6;
-        margin-left: 1em;
+    .box-body ul li{
+        padding-left: 1rem;
     }
-    .box-footer {
-        width: 90%;
-        margin: auto;
-        gap: 1em;
-    }
-    .box-footer p {
-        display: flex;
-        width: 90%;
-        line-height: 1.5rem;
+    .box-body p {
         font-size: 1rem;
-        font-weight: 100;
-        margin: auto;
-        padding-bottom: 2em;
     }
-/* END EXPERIENCE */
+    /* END EXPERIENCE */
 
 
-/* WORK */
+    /* WORK */
     .work-cont {
-        width: 100%;
-        min-width: 768px;
-        max-width: 1023px;
-    }
-    .w-fig-box {
-        margin: auto;
-        width: 80%;
-        gap: 3em;
+        width: calc(80% + 10vw);
+        gap: 1rem;
     }
     .work-fig-t1, 
     .work-fig-t2 {
-        margin: 0 auto;
-        gap: 1em;
+        width: calc(80% + 10vw);
     }
     .work-img {
-        width: 50%;
+        width: 60%;
     }
     .work-img img {
         width: 100%;
-        height: auto;
-        object-fit: cover;
+        height: 100%;
     }
     .work-des {
-        width: 50%;
+        width: calc(40% - 40px);
+        padding: 20px;
     }
     .wd-head {
-        width: 100%;
-        gap: 1em;
+        margin-bottom: 10px;
+    }
+    .wd-head-t h3 {
+        font-size: 1.8rem;
+        font-weight: 500;
+
     }
     .wd-head-icon {
         gap: 1em;
@@ -225,19 +175,11 @@ section {
     .wd-head-icon i {
         font-size: 1.4rem;
     }
-    .wd-head-t h3 {
-        font-size: 1.8rem;
-        font-weight: 500;
-        margin: 0;
-    }
     .wd-body {
-        background-color: #112240; /* Couleur de fond semi-transparente */
-        padding: 1em;
         width: calc(100% - -150px); /* Largeur égale à 100% de la largeur parente moins 20px pour un léger débordement */
     }
     .wd-body p {
         font-size: 1rem;
-        font-weight: 100;
     }
     .wd-footer {
         gap: 1em;
@@ -245,24 +187,23 @@ section {
     .wd-footer span {
         font-size: 1.2rem;
     }
-/* END WORK */
+    /* END WORK */
 
 
-/* PROJECT */
+    /* PROJECT */
     .project-cont {
-        width: 100%;
-        min-width: 768px;
-        max-width: 1023px;
+        width: calc(80% + 10vw);
+        gap: 1rem;
     }
     .box-files{
-        margin: auto;
-        width: 80%;
         gap: 1em;
     }
     .project-file {
-        width: 300px;
-        min-width: 250px;
-        max-width: 25%;
+        margin: 1em;
+        flex-grow: 1;
+        flex-basis: calc(33.33% - 1em);
+        min-width: 200px;
+        max-width: 300px;
     }
     .project-head {
         width: 100%;
@@ -273,17 +214,14 @@ section {
     }
     .project-h-t h3{
         font-size: 1.2rem;
-        padding: 0.3em;
     }
     .project-h-l {
         width: 30%;
     }
     .project-h-l a {
         font-size: 1.5rem;
-        padding: 0.3em;
     }
     .project-b-h {
-        margin: auto;
         width: 90%;
         height: 50px;
         gap: 1em;
@@ -291,19 +229,16 @@ section {
     }
     .project-b-h p {
         font-size: 1rem;
-        margin: 0;
     }
     .project-b-b {
-        margin: auto;
         width: 90%;
         min-height: 150px;
         padding-top: 1em;
     }
     .project-b-b p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .project-b-f {
-        margin: auto;
         width: 90%;
         height: 50px;
         padding-top: 1em;
@@ -313,21 +248,20 @@ section {
     .project-b-f span {
         font-size: 0.8rem;
     }
-/* END PROJECT */
+    /* END PROJECT */
 
 
-/* CONTACT */
+    /* CONTACT */
     .form-cont {
-        width: 100%;
-        min-width: 360px;
-        max-width: 767px;
+        margin: 0 auto;
+        width: calc(80% + 10vw);
+        gap: 1rem;
     }
     .formulaire {
-        width: 100%;
-        min-width: 340px;
-        max-width: 750px;
-        border: 1px solid#8892B0;
-        border-radius: 3%;
+        margin: auto;
+        width: calc(80% + 0vw);
+        border: 1px solid #8892B0;
+        border-radius: 16px;
         gap: 2em;
     }
     .form-ask {
@@ -409,17 +343,18 @@ section {
     button[type="submit"]:hover {
         border: 1px solid #112240;
     }
-/* END CONTACT */
+    /* END CONTACT */
 
 
-/* FOOTER */
+    /* FOOTER */
     footer {
+        margin: 0 auto;
+        width: calc(100% + 0vw);
+        gap: 1rem;
         border-top: 1px solid #64ffda;
-        width: 100%;
         margin-top: 150px;
         height: 150px;
     }
-
     footer p  {
         font-size: 1rem;
     }
@@ -431,13 +366,5 @@ section {
         padding: 10px;
         font-size: 1.8em;
     }
-/* END FOOTER */
-
+    /* END FOOTER */
 }
-
-@media screen and (max-width: 768px)
-@media screen and (max-width: 768px)
-@media screen and (max-width: 768px)
-@media screen and (max-width: 768px)
-@media screen and (max-width: 768px)
-@media screen and (max-width: 768px)
