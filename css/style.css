@@ -186,12 +186,10 @@
     .exp-cont {
         display: flex;
         margin: 0 auto;
-        width: calc(60% + 0vw);
     }
     .exp-table{
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
     .table-head {
         display: flex;
@@ -199,19 +197,16 @@
     }
     .th-cln-bld {
         display: flex;
-        width: 25%;
     }
     .th-btn-select{
         display: flex;
         flex-direction: row;
         border: 1px solid #8892B0;
-        width: 75%;
     }
     .t-h-btn {
         border: none;
         background-color: #0A192F;
         color: #8892B0;
-        width: 50%;
         padding: 1rem;
     }
     .t-h-btn:hover {
@@ -221,25 +216,21 @@
     .table-body {
         display: flex;
         flex-direction: row;
-        min-height: 400px;
     }
     .tb-btn-select {
         display: flex;
         flex-direction: column;
         border: 1px solid #8892B0;
-        width: 25%;
     }
     .tb-txt-select {
         display: flex;
-        width: 75%;
     }
     .t-b-btn {
         display: flex;
+        justify-content: center;
         background-color: #0A192F;
         color: #8892B0;
         border: 1px #0A192F;
-        width: 100%;
-        padding: 1rem;
     }
     .t-b-btn:hover {
         color: #64FFDA;
@@ -249,37 +240,26 @@
         display: none;
         flex-direction: column;
     }
-
     .box-head {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
     }
     .box-head-t, .box-head-d {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
     }
     .box-head-t a {
         color: #64FFDA;
-        padding: 1rem;
-    }
-    .box-head-t h3 {
-        font-size: 1rem;
-        padding: 1rem;
     }
     .box-body {
         display: flex;
-        gap: 1rem;
     }
     .box-body-t {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        width: 90%;
-        gap: 1rem;
     }
 
     .box-body-t ul li{
@@ -579,7 +559,7 @@
         gap: 1rem;
     }
     .aboutme-txt { 
-        width: calc(80% - 0vw);
+        width: 80%;
         gap: 1rem;
     }
     .aboutme-txt p {
@@ -587,7 +567,7 @@
         line-height: 1.5rem;
     }
     .aboutme-btn { 
-        width: calc(30% - 0vw);
+        width: 20%;
         gap: 1rem;
     }
     .redirect-btn {
@@ -597,7 +577,57 @@
 /* END ABOUT ME */
 
 
-
+/* EXPERIENCE AREA */
+    .exp-cont {
+        width: calc(60% + 0vw);
+    }
+    .exp-table{
+        width: 100%;
+    }
+    .th-cln-bld {
+        width: 25%;
+    }
+    .th-btn-select{
+        width: 75%;
+    }
+    .t-h-btn {
+        width: 50%;
+        padding: 1rem;
+    }
+    .table-body {
+        min-height: 400px;
+    }
+    .tb-btn-select {
+        width: 25%;
+    }
+    .tb-txt-select {
+        width: 75%;
+    }
+    .t-b-btn {
+        width: 100%;
+        padding: 1rem;
+    }
+    .box-head {
+        gap: 1rem;
+    }
+    .box-head-t, .box-head-d {
+        width: 100%;
+    }
+    .box-head-t a {
+        padding: 1rem;
+    }
+    .box-head-t h3 {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .box-body {
+        gap: 1rem;
+    }
+    .box-body-t {
+        width: 90%;
+        gap: 1rem;
+    }
+/* END EXPERIENCE AREA */
 
 
 /* WORK */
@@ -607,43 +637,36 @@
     }
     .work-fig-t1, 
     .work-fig-t2 {
-        width: calc(80% + 0vw);
+        width: 100%;
     }
     .work-img {
-        width: calc(60vw - 0vw);
+        width: 60%;
     }
     .work-img img {
         width: 100%;
         height: 100%;
     }
     .work-des {
-        width: calc(40vw - 0vw);
+        width: 40%;
     }
     .wd-head {
         margin-bottom: 10px;
     }
     .wd-head-t h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 500;
     }
     .wd-head-icon {
         gap: 1em;
-        padding-left: 1em;
     }
     .wd-head-icon i {
         font-size: 1.4rem;
     }
     .wd-body {
-        width: calc(100% - -150px); /* Largeur égale à 100% de la largeur parente moins 20px pour un léger débordement */
-    }
-    .wd-body p {
-        font-size: 1rem;
+        width: calc(100% - -45%); /* Largeur égale à 100% de la largeur parente moins 20px pour un léger débordement */
     }
     .wd-footer {
         gap: 1em;
-    }
-    .wd-footer span {
-        font-size: 1.2rem;
     }
 /* END WORK */
 
