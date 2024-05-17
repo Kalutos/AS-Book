@@ -75,12 +75,8 @@
         margin: 0;
     }
     p {
-        font-size: 1rem;
         font-family: 'Inter';
-        font-weight: 100;
-        line-height: 1.5rem;
         margin: 0;
-        padding: 1rem;
     }
     section {
         display: flex;
@@ -105,6 +101,10 @@
 
 /* HOME AREA */
     .home-cont  {
+        display: flex;
+        margin: 0 auto;
+    }
+    .home-box  {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -518,6 +518,14 @@
     section {
         width: calc(100% + 0vw);
     }
+    p {
+        font-size: 1rem;
+        font-family: 'Inter';
+        font-weight: 100;
+        line-height: 1.5rem;
+        margin: 0;
+        padding: 1rem;
+    }
     .ancre-title {
         width: calc(70% + 0vw);
         gap: 2em;
@@ -529,26 +537,26 @@
 /* HOME */
     .home-cont {
         width: calc(60% + 0vw);
+    }
+    .home-box{
+        margin: 0 auto;
+        width: 80%;
         gap: 1rem;
     }
     .home-cont h1 {
         font-size: 1.5rem;
     }
     .home-cont h2 {
-        font-size: 5rem;
-    }
-    .home-cont h3 {
         font-size: 3.5rem;
     }
-    .home-cont p {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
+    .home-cont h3 {
+        font-size: 2.5rem;
     }
     .btn-home {
         width: 150px;
         margin: 1rem;
         padding: 1rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 /* END HOME */
 
@@ -559,20 +567,19 @@
         gap: 1rem;
     }
     .aboutme-txt { 
-        width: 80%;
+        margin: 0 auto;
+        width: 60%;
         gap: 1rem;
     }
-    .aboutme-txt p {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
-    }
     .aboutme-btn { 
+        margin: 0 auto;
         width: 20%;
         gap: 1rem;
     }
     .redirect-btn {
         width: 150px;
         padding: 1rem;
+        font-size: 0.8rem;
     }
 /* END ABOUT ME */
 
@@ -582,7 +589,8 @@
         width: calc(60% + 0vw);
     }
     .exp-table{
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
     }
     .th-cln-bld {
         width: 25%;
@@ -593,6 +601,7 @@
     .t-h-btn {
         width: 50%;
         padding: 1rem;
+        font-size: 0.8rem;
     }
     .table-body {
         min-height: 400px;
@@ -606,6 +615,7 @@
     .t-b-btn {
         width: 100%;
         padding: 1rem;
+        font-size: 0.8rem;
     }
     .box-head {
         gap: 1rem;
@@ -637,7 +647,8 @@
     }
     .work-fig-t1, 
     .work-fig-t2 {
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
     }
     .work-img {
         width: 60%;
@@ -663,7 +674,7 @@
         font-size: 1.4rem;
     }
     .wd-body {
-        width: calc(100% - -45%); /* Largeur égale à 100% de la largeur parente moins 20px pour un léger débordement */
+        width: calc(100% - -15vw); /* Largeur égale à 100% de la largeur parente moins 20px pour un léger débordement */
     }
     .wd-footer {
         gap: 1em;
