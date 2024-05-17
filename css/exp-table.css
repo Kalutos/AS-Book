@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0A192F;
+    margin: 0;
+    font-family: 'Inter AllType', sans-serif;
+    color: #CCD6F6;
+  }
+  .exp-table {
+    margin: auto;
+    min-width: calc(60vw - 0vw);
+    max-width: calc(80vw - 0vw);
+      border-collapse: collapse;
+  }
+  .exp-table button {
+    background-color: #0A192F;
+    color: #8892B0;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  table button:hover {
+    color: #64FFDA;
+    background-color: #233554;
+  }
+  
+  
+  thead tr {
+    margin: auto;
+    min-width: calc(60vw - 0vw);
+    max-width: calc(80vw - 0vw);
+  }
+  thead tr th:first-child {
+      width: calc(20vw - 0vw);
+  }
+  thead tr th:nth-child(2) {
+      width: calc(80vw - 0vw);
+      border: 1px solid #8892B0;
+      display: flex;
+      flex-direction: row;
+  }
+  thead tr th button {
+          width: 50%;
+  }
+  tbody tr {
+    margin: auto;
+    min-width: calc(60vw - 0vw);
+    max-width: calc(80vw - 0vw);
+    height: 400px;
+  }
+  
+  .btn-select {
+      border: 1px solid #8892B0;
+      margin: auto;
+      min-width: calc(10vw - 0vw);
+      max-width: calc(20vw - 0vw);
+      vertical-align: top;
+      text-align: center;
+  }
+  .btn-select button {
+    width: 100%;
+  }
+  .txt-select {
+    margin: auto;
+    min-width: calc(50vw - 0vw);
+    max-width: calc(40vw - 0vw);
+      border: 1px solid #8892B0;
+  }
+  
+  
+  #result-cell div {
+    display: none;
+  }

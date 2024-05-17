@@ -133,45 +133,45 @@
 
 				<div class="exp-cont">
 
-					<div class="exp-type">
+					<div class="exp-table">
 
-							<button id="exp-btn-exp" class="exp-btn-type">Expériences Professionnelles</button>
+						<div class="table-head">
 
-							<button id="exp-btn-form" class="exp-btn-type">Formations</button>
+							<div class="th-cln-bld"></div>
 
-					</div>
+							<div class="th-btn-select">
 
-					<div class="exp-column">
+								<button id="exp-btn-exp" class="t-h-btn">Expériences Professionnelles</button>
+	
+								<button id="exp-btn-form" class="t-h-btn">Formations</button>
+	
+							</div>
 
-							<div class="exp-choice">
+						</div>
 
-									<div class="contenu" id="contenu-experiences">
+						<div class="table-body">
 
-											<button id="work-choice-mysticode" class="exp-btn">MystiCodeCollectif</button>
+							<div class="tb-btn-select">
 
-											<button id="work-choice-namastha" class="exp-btn">Namastha</button>
+								<button id="work-choice-mysticode" class="t-b-btn">MystiCodeCollectif</button>
 
-											<button id="work-choice-bluebuddy" class="exp-btn">BlueBuddy</button>
+								<button id="work-choice-namastha" class="t-b-btn">Namastha</button>
 
-											<button id="work-choice-psj" class="exp-btn">Plateforme jeux</button>
+								<button id="work-choice-bluebuddy" class="t-b-btn">BlueBuddy</button>
 
-											<button id="work-choice-ensmv" class="exp-btn">Ensmv</button>
+								<button id="work-choice-psj" class="t-b-btn">Plateforme jeux</button>
 
-									</div>
+								<button id="work-choice-ensmv" class="t-b-btn">Ensmv</button>
 
-									<div class="contenu" id="contenu-formations">
+								<button id="work-choice-e42" class="t-b-btn">École 42</button>
 
-											<button id="work-choice-e42" class="exp-btn">École 42</button>
+								<button id="work-choice-opcr" class="t-b-btn">OpenClassroom</button>
 
-											<button id="work-choice-opcr" class="exp-btn">OpenClassroom</button>
-
-											<button id="work-choice-cfdi" class="exp-btn">Campus FDI</button>
-
-									</div>
+								<button id="work-choice-cfdi" class="t-b-btn">Campus FDI</button>
 
 							</div>
 
-							<div class="exp-txt">
+							<div class="tb-txt-select">
 
 								<div id="work-txt-mysticode" class="exp-box">
 
@@ -199,13 +199,13 @@
 
 										<div class="box-body-t">
 
-											<ul>Objectifs Principaux :
-												<li>- Création du Collectif TheMystiCodeCollectif.</li>
-												<li>- Utilisation de Nextjs pour la création du site internet.</li>
-												<li>- Création de multiple liens de réseaux sociaux.</li>
-												<li>- Aggrandir notre réseaux partenaires/clients.</li>
+											<ul><p>Objectifs Principaux :</p>
+												<li><p>Création du Collectif TheMystiCodeCollectif.</p></li>
+												<li><p>Utilisation de Nextjs pour la création du site internet.</p></li>
+												<li><p>Création de multiple liens de réseaux sociaux.</p></li>
+												<li><p>Aggrandir notre réseaux partenaires/clients.</p></li>
 											</ul>
-	
+
 											<p>
 												C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
 												leurs domaines. Le fait de ne pas être une entreprise dite traditionnelle est pour préserver 
@@ -227,23 +227,23 @@
 									<div class="box-head">
 							
 											<div class="box-head-t">
-	
+
 												<h3>Namastha</h3>
 
 												<a href="#" target="_blank">@Namastha</a>
-	
+
 											</div>
 											
 											<div class="box-head-d">
-	
+
 												<p>Projet personnel</p>
 
 												<p>Avril 2024</p>
-	
+
 											</div>
-	
+
 									</div>
-	
+
 									<div class="box-body">
 
 										<div class="box-body-t">
@@ -553,6 +553,8 @@
 
 							</div>
 
+						</div>
+
 					</div>
 
 				</div>
@@ -604,8 +606,7 @@
 
 								<p>
 									C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
-									leurs domaines. Le fait de ne pas être une entreprise dite traditionnelle est pour préserver 
-									une liberté de mouvement et d’action facilitant ainsi l’ adaptation aux projets des clients .
+									leurs domaines.
 								</p>
 
 							</div>
@@ -656,8 +657,7 @@
 
 								<p>
 									C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
-									leurs domaines. Le fait de ne pas être une entreprise dite traditionnelle est pour préserver 
-									une liberté de mouvement et d’action facilitant ainsi l’ adaptation aux projets des clients .
+									leurs domaines.
 								</p>
 
 							</div>
@@ -709,8 +709,7 @@
 
 								<p>
 									C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
-									leurs domaines. Le fait de ne pas être une entreprise dite traditionnelle est pour préserver 
-									une liberté de mouvement et d’action facilitant ainsi l’ adaptation aux projets des clients .
+									leurs domaines.
 								</p>
 
 							</div>
@@ -789,9 +788,9 @@
 							
 							<div class="project-b-f">
 
-								<span>Front-end Next.Js</span>
-								<span>API</span>
-								<span>Back-end Laravel</span>
+								<p>Front-end Next.Js</p>
+								<p>API</p>
+								<p>Back-end Laravel</p>
 
 							</div>
 
@@ -1455,7 +1454,8 @@
 	<!-- SCRIPT AREA -->
 		<script src="https://kit.fontawesome.com/cd2ba50a4e.js" crossorigin="anonymous"></script>
 		<script src="js/menu-responsive.js"></script>
-		<script src="js/tableau-work.js"></script>
+		<script src="js/exp-table.js"></script>
+		<script src="js/tableau.js"></script>
 		<script src="js/redirect.js"></script>
 		<script src="js/show&hide.js"></script>
 

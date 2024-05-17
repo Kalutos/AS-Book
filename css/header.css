@@ -3,6 +3,7 @@
 /* HEADER */
     header {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         color: #a8b2d1;
         background-color: #112240;
@@ -47,7 +48,7 @@
     }
     .menu-container {
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
     }
     .scroll-button {
         background-color: #112240;
@@ -75,10 +76,11 @@
 /* Ajoutez vos styles CSS pour les écrans d'ordinateur ici */
 
     header {
-        width: 100%;
+        width: calc(100vw - 0vw);
+        height: 100px;
     }
     .logo {
-        width: calc(30vw - 0vw);
+        width: calc(25vw - 0vw);
         margin-left: 1rem;
     }
     .logo img {
@@ -90,12 +92,10 @@
     }
     .menu-container {
         width: calc(65vw - 0vw);
-        height: 100px;
         gap: 1rem;
     }
     .scroll-button {
-        width: 120px;
-        padding: 1em;
+        padding: 1rem;
         transition: .5s;
     }
     .scroll-button:before {
