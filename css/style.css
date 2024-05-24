@@ -147,12 +147,17 @@
 /* ABOUT ME AREA */
     .aboutme-cont {
         display: flex;
+        margin: 0 auto;
+    }
+    .aboutme-box {
+        display: flex;
         align-items: center;
         margin: 0 auto;
     }
     .aboutme-txt {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
     }
     .aboutme-txt p {
         font-weight: 100;
@@ -162,6 +167,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
     }
     .aboutme-btn a {
         padding: 0;
@@ -190,6 +196,7 @@
     .exp-table{
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
     }
     .table-head {
         display: flex;
@@ -213,6 +220,7 @@
         background-color: #233554;
         color: #64FFDA;
     }
+
     .table-body {
         display: flex;
         flex-direction: row;
@@ -280,6 +288,10 @@
 
 /* WORK AREA */
     .work-cont {
+        display: flex;
+        margin: 0 auto;
+    }
+    .work-box{
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -426,7 +438,7 @@
     .form-ask div {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content:  flex-start;
     }
     .form-ask div p {
         display: flex;
@@ -517,6 +529,7 @@
     }
     section {
         width: calc(100% + 0vw);
+        margin-bottom: 1rem;
     }
     p {
         font-size: 1rem;
@@ -536,6 +549,7 @@
     }
 /* HOME */
     .home-cont {
+        margin: 0 auto;
         width: calc(60% + 0vw);
     }
     .home-box{
@@ -543,13 +557,13 @@
         width: 80%;
         gap: 1rem;
     }
-    .home-cont h1 {
+    .home-box h1 {
         font-size: 1.5rem;
     }
-    .home-cont h2 {
+    .home-box h2 {
         font-size: 3.5rem;
     }
-    .home-cont h3 {
+    .home-box h3 {
         font-size: 2.5rem;
     }
     .btn-home {
@@ -566,13 +580,15 @@
         width: calc(60% + 0vw);
         gap: 1rem;
     }
+    .aboutme-box {
+        width: 80%;
+        gap: 1rem;
+    }
     .aboutme-txt { 
-        margin: 0 auto;
         width: 60%;
         gap: 1rem;
     }
     .aboutme-btn { 
-        margin: 0 auto;
         width: 20%;
         gap: 1rem;
     }
@@ -645,10 +661,14 @@
         width: calc(60% + 0vw);
         gap: 5rem;
     }
+    .work-box{
+        width: 80%;
+        gap: 5rem;
+    }
     .work-fig-t1, 
     .work-fig-t2 {
         margin: 0 auto;
-        width: 80%;
+
     }
     .work-img {
         width: 60%;
@@ -688,6 +708,7 @@
         gap: 1rem;
     }
     .box-files{
+        width: 80%;
         gap: 1em;
     }
     .project-file {
@@ -701,6 +722,7 @@
         height: 60px;
     }
     .project-h-t{
+        margin-left: 1rem;
         width: 70%;
     }
     .project-h-t h3{
@@ -708,6 +730,7 @@
     }
     .project-h-l {
         width: 30%;
+        margin-right: 1rem;
     }
     .project-h-l a {
         font-size: 1.5rem;

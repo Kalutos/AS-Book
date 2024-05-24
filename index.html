@@ -1,1473 +1,1362 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/header.css">
-		<link rel="stylesheet" type="text/css" href="css/respon-pad.css">
-		<link rel="stylesheet" type="text/css" href="css/respon-mob-land.css">
-		<link rel="stylesheet" type="text/css" href="css/respon-mob-port.css">
-        <title>Arthur Selva</title>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes"
+    />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/respon-pad.css" />
+    <link rel="stylesheet" type="text/css" href="css/respon-mob-land.css" />
+    <link rel="stylesheet" type="text/css" href="css/respon-mob-port.css" />
+    <title>Arthur Selva</title>
+  </head>
 
-	<body>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" href="#home-section" alt="icon-site" />
+      </div>
 
-		<header>
+      <input id="menu-toggle" type="checkbox" />
 
-            <div class="logo">
+      <label class="menu-button-container" for="menu-toggle">
+        <span class="menu-button"></span>
 
-                <img src="img/logo.png" href="#home-section" alt="icon-site">
-				
+        <a href="#" id="menu-hide">Cacher/montrer la sidebar</a>
+      </label>
+
+      <nav class="menu-container">
+        <button class="scroll-button" onclick="scrollToDiv('#home-section')">
+          Accueil
+        </button>
+        <button class="scroll-button" onclick="scrollToDiv('#aboutme-section')">
+          À propos
+        </button>
+        <button class="scroll-button" onclick="scrollToDiv('#exp-section')">
+          Expériences
+        </button>
+        <button class="scroll-button" onclick="scrollToDiv('#work-section')">
+          Work
+        </button>
+        <button class="scroll-button" onclick="scrollToDiv('#project-section')">
+          Portfolio
+        </button>
+        <button class="scroll-button" onclick="scrollToDiv('#contact-section')">
+          Contact
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME AREA -->
+      <section id="home-section">
+        <div class="home-cont">
+          <div class="home-box">
+            <h1>Bienvenue, je suis</h1>
+
+            <h2>Arthur Selva.</h2>
+
+            <h3>Développeur web junior</h3>
+
+            <p>
+              Autodidacte, je suis passionné par le création d’expériences
+              numériques. Concrétement ce que j’aime c’est apprendre et partager
+              différents langages informatiques afin de concentrer mes résultats
+              sur des produits accessibles et centré sur l’humain. Actuellement
+              en recherche d'emploi en tant qu'alternant en temps partiel soit
+              10 mois en entreprise après les 2 mois de botcamps.
+            </p>
+
+            <a href="#portfolio-section">
+              <button class="btn-home">Portfolio</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- END HOME AREA -->
+
+      <!-- ABOUT ME AREA -->
+      <section id="aboutme-section">
+        <div class="ancre-title">
+          <h2><span class="heading-pagination">01.</span> A propos de moi</h2>
+        </div>
+
+        <div class="aboutme-cont">
+          <div class="aboutme-box">
+            <div class="aboutme-txt">
+              <p>
+                Salut ! Je m’appelle Arthur Selva et j’adore créer des choses
+                qui restent sur internet. Mon interet pour le développement web
+                a commencé en 2007 au travers du Site du Zéro avec lequel j’ai
+                commencé mes premières ébauches HTML & CSS Depuis mon bac A.M.A
+                option communication visuelle plurimédia, et après un changement
+                de vie, je développe mes compétences en continue grâce à des
+                M.O.O.C. et cours particuliers.
+              </p>
+
+              <p>
+                Mon objectif principale est d’ apprendre et partager différents
+                langages informatiques afin de concentrer mes résultats sur des
+                produits accessibles et centré sur l’humain pour une variété de
+                clients.
+              </p>
             </div>
 
-            <input id="menu-toggle" type="checkbox" />
-
-            <label class='menu-button-container' for="menu-toggle">
-
-                <span class='menu-button'></span>
-
-				<a href="#" id="menu-hide">Cacher/montrer la sidebar</a>
-
-            </label>
-
-            <nav class="menu-container">
-
-				<button class="scroll-button" onclick="scrollToDiv('#home-section')">Accueil</button>
-				<button class="scroll-button" onclick="scrollToDiv('#aboutme-section')">À propos</button>
-				<button class="scroll-button" onclick="scrollToDiv('#exp-section')">Expériences</button>
-				<button class="scroll-button" onclick="scrollToDiv('#work-section')">Work</button>
-				<button class="scroll-button" onclick="scrollToDiv('#project-section')">Portfolio</button>
-				<button class="scroll-button" onclick="scrollToDiv('#contact-section')">Contact</button>
-
-            </nav>
-			
-		</header>
-
-		<main>
-		<!-- HOME AREA -->               
-			<section id="home-section">
-
-				<div class="home-cont">
-
-					<div class="home-box">
-						
-						<h1>Bienvenue, je suis</h1>
-
-						<h2>Arthur Selva.</h2>
-	
-						<h3>Développeur web junior</h3>
-						
-						<p>Autodidacte, je suis passionné par le création d’expériences numériques.
-							Concrétement ce que j’aime c’est apprendre et partager différents langages
-							informatiques afin de concentrer mes résultats sur des produits accessibles
-							et centré sur l’humain. Actuellement en recherche d'emploi en tant qu'alternant 
-							en temps partiel soit 10 mois en entreprise après les 2 mois de botcamps.
-						</p>
-	
-						<a href="#portfolio-section">
-							<button class="btn-home">Portfolio</button>
-						</a>
-
-					</div>
-
-				</div>
-
-			</section>
-		<!-- END HOME AREA -->
-
-
-		<!-- ABOUT ME AREA -->
-			<section id="aboutme-section">
-
-				<div class="ancre-title">
-
-					<h2><span class="heading-pagination">01.</span> A propos de moi</h2>
-
-				</div>
-
-				<div class="aboutme-cont">
-
-					<div class="aboutme-txt">
-
-						<p>Salut ! Je m’appelle Arthur Selva et j’adore créer des choses qui restent sur internet.
-							Mon interet pour le développement web a commencé en 2007 au travers du Site du Zéro avec
-							lequel j’ai commencé mes premières ébauches HTML & CSS Depuis mon bac A.M.A option communication
-							visuelle plurimédia, et après un changement de vie, je  développe mes compétences en continue
-							grâce à des M.O.O.C. et cours particuliers.
-						</p>
-
-						<p> Mon objectif principale est d’ apprendre et partager différents langages informatiques 
-							afin de concentrer mes résultats sur des produits accessibles et centré sur l’humain 
-							pour une variété de clients.
-						</p>
-
-					</div>
-					
-					<div class="aboutme-btn">
-						
-						<button class="redirect-btn" onclick="window.open('linkedin.com/in/arthurselvafichepain/', '_blank')">Linkedin</button>
-						
-						<button class="redirect-btn" onclick="window.open('github.com/Kalutos', '_blank')">Github</button>
-						
-						<button class="redirect-btn" onclick="window.open('facebook.com/', '_blank')">Facebook</button>
-
-						<a href="img/cvwd.pdf" id="cv-download-link" download="VotreCV.pdf">
-
-							<button class="redirect-btn" onclick="window.open('facebook.com/', '_blank')">CV</button>
-
-						</a>				
-
-					</div>
-
-				</div>
-
-			</section>
-		<!-- END ABOUT ME AREA -->
-
-
-		<!-- EXPERIENCES AREA -->
-			<section id="exp-section">
-					
-				<div class="ancre-title">
-								
-						<h2><span class="heading-pagination">02.</span>Expériences professionelles et formations</h2>
-				
-				</div>
-
-				<div class="exp-cont">
-
-					<div class="exp-table">
-
-						<div class="table-head">
-
-							<div class="th-cln-bld"></div>
-
-							<div class="th-btn-select">
-
-								<button id="exp-btn-exp" class="t-h-btn">Expériences Professionnelles</button>
-	
-								<button id="exp-btn-form" class="t-h-btn">Formations</button>
-	
-							</div>
-
-						</div>
-
-						<div class="table-body">
-
-							<div class="tb-btn-select">
-
-								<button id="work-choice-mysticode" class="t-b-btn">MystiCodeCollectif</button>
-
-								<button id="work-choice-namastha" class="t-b-btn">Namastha</button>
-
-								<button id="work-choice-bluebuddy" class="t-b-btn">BlueBuddy</button>
-
-								<button id="work-choice-psj" class="t-b-btn">Plateforme jeux</button>
-
-								<button id="work-choice-ensmv" class="t-b-btn">Ensmv</button>
-
-								<button id="work-choice-e42" class="t-b-btn">École 42</button>
-
-								<button id="work-choice-opcr" class="t-b-btn">OpenClassroom</button>
-
-								<button id="work-choice-cfdi" class="t-b-btn">Campus FDI</button>
-
-							</div>
-
-							<div class="tb-txt-select">
-
-								<div id="work-txt-mysticode" class="exp-box">
-
-									<div class="box-head">
-
-										<div class="box-head-t">
-
-											<h3>TheMystiCodeCollectif</h3>
-
-											<a href="https://triangleoffensedigital.com/" target="_blank">@TheMystiCodeCollectif</a>
-
-										</div>
-										
-										<div class="box-head-d">
-
-											<p>Projet</p>
-
-											<p>07 Juin 2023</p>
-
-										</div>
-
-									</div>
-
-									<div class="box-body">
-
-										<div class="box-body-t">
-
-											<ul><p>Objectifs Principaux :</p>
-												<li><p>Création du Collectif TheMystiCodeCollectif.</p></li>
-												<li><p>Utilisation de Nextjs pour la création du site internet.</p></li>
-												<li><p>Création de multiple liens de réseaux sociaux.</p></li>
-												<li><p>Aggrandir notre réseaux partenaires/clients.</p></li>
-											</ul>
-
-											<p>
-												C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
-												leurs domaines. Le fait de ne pas être une entreprise dite traditionnelle est pour préserver 
-												une liberté de mouvement et d’action facilitant ainsi l’ adaptation aux projets des clients 
-												ou partenaires. Ainsi nos experts peuvent avoir l’opportunité de travailler en collaboration 
-												sur des projets qui les passionnents tout en leur permettant d’accroite leur propre entreprise 
-												personnelle au sein d'un écosystème dynamique. Chaque membre de TheMystiCodeCollectif est 
-												auto-entrepreneur et sa structure se fonde sur le système d’un side hustle.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div id="work-txt-namastha" class="exp-box">
-
-									<div class="box-head">
-							
-											<div class="box-head-t">
-
-												<h3>Namastha</h3>
-
-												<a href="#" target="_blank">@Namastha</a>
-
-											</div>
-											
-											<div class="box-head-d">
-
-												<p>Projet personnel</p>
-
-												<p>Avril 2024</p>
-
-											</div>
-
-									</div>
-
-									<div class="box-body">
-
-										<div class="box-body-t">
-												
-											<ul>Objectifs Principaux :
-												<li>- Gestions de crise et tchat général</li>
-												<li>- Journal alimentaire et émotionnel</li>
-												<li>- Création d'objectifs hebdomadaires</li>
-												<li>- Boîte à outils</li>
-											</ul>
-
-											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-												dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-												massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-												eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-												in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-												Praesent egestas leo in pede.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div id="work-txt-bluebuddy" class="exp-box">
-
-									<div class="box-head">
-							
-										<div class="box-head-t">
-
-											<h3>BlueBuddy</h3>
-											
-											<a href="#" target="_blank">@BlueBuddy</a>
-
-										</div>
-										
-										<div class="box-head-d">
-
-											<p>Projet personnel</p>
-
-											<p>Mai 2024</p>
-
-										</div>
-
-									</div>
-
-									<div class="box-body">
-
-										<div class="box-body-t">
-												
-											<ul>Objectifs Principaux :
-												<li>- Gestions de crise et tchat général</li>
-												<li>- Journal alimentaire et émotionnel</li>
-												<li>- Création d'objectifs hebdomadaires</li>
-												<li>- Boîte à outils</li>
-											</ul>
-
-											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-												dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-												massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-												eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-												in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-												Praesent egestas leo in pede.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div id="work-txt-psj" class="exp-box">
-
-									<div class="box-head">
-								
-										<div class="box-head-t">
-
-											<h3>Plateforme Jeux Soluce</h3>
-
-											<a href="#" target="_blank">@</a>
-
-										</div>
-										
-										<div class="box-head-d">
-
-											<p>Projet personnel</p>
-
-											<p>à venir</p>
-
-										</div>
-
-									</div>
-
-									<div class="box-body">
-
-										<div class="box-body-t">
-												
-											<ul>Objectifs Principaux
-													<li>Création du Collectif TheMystiCodeCollectif.</li>
-													<li>Utilisation de React pour la création du site internet.</li>
-													<li>Création de multiple liens de réseaux sociaux.</li>
-													<li>Aggrandir notre réseaux partenaires/clients.</li>
-											</ul>
-
-											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-												dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-												massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-												eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-												in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-												Praesent egestas leo in pede.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div id="work-txt-ensmv" class="exp-box">
-
-									<div class="box-head">
-								
-										<div class="box-head-t">
-
-											<h3>ENSMV</h3>
-											
-											<a href="https://ensmv.com/" target="_blank">@ENSMV</a>
-
-										</div>
-										
-										<div class="box-head-d">
-
-											<p>Projet personnel</p>
-
-											<p>Octobre 2015 - Août 2017</p>
-
-										</div>
-
-									</div>
-
-									<div class="box-body">
-
-										<div class="box-body-t">
-												
-											<ul>Objectifs Principaux
-													<li>Création du Collectif TheMystiCodeCollectif.</li>
-													<li>Utilisation de React pour la création du site internet.</li>
-													<li>Création de multiple liens de réseaux sociaux.</li>
-													<li>Aggrandir notre réseaux partenaires/clients.</li>
-											</ul>
-
-											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-												dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-												massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-												eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-												in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-												Praesent egestas leo in pede.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div id="work-txt-e42" class="exp-box">
-
-									<div class="box-head">
-									
-										<div class="box-head-t">
-
-											<h3>École 42</h3>
-
-											<a href="https://42.fr/" target="_blank">@École 42</a>
-
-										</div>
-										
-										<div class="box-head-d">
-
-											<p>Piscine école 42</p>
-
-											<p>Mars 2021</p>
-
-										</div>
-
-									</div>
-
-									<div class="box-body">
-
-										<div class="box-body-t">
-												
-											<ul>Objectifs Principaux
-													<li>Création du Collectif TheMystiCodeCollectif.</li>
-													<li>Utilisation de React pour la création du site internet.</li>
-													<li>Création de multiple liens de réseaux sociaux.</li>
-													<li>Aggrandir notre réseaux partenaires/clients.</li>
-											</ul>
-
-											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-												dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-												massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-												eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-												in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-												Praesent egestas leo in pede.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div id="work-txt-opcr" class="exp-box">
-
-									<div class="box-head">
-									
-										<div class="box-head-t">
-
-											<h3>OpenClassroom</h3>
-
-											<a href="https://openclassrooms.com/fr/" target="_blank">@OpenClassroom</a>
-
-										</div>
-										
-										<div class="box-head-d">
-
-											<p>Formation Développeur web junior</p>
-
-											<p>Janvier 2020</p>
-
-										</div>
-
-									</div>
-
-									<div class="box-body">
-
-										<div class="box-body-t">
-												
-											<ul>Objectifs Principaux
-													<li>Création du Collectif TheMystiCodeCollectif.</li>
-													<li>Utilisation de React pour la création du site internet.</li>
-													<li>Création de multiple liens de réseaux sociaux.</li>
-													<li>Aggrandir notre réseaux partenaires/clients.</li>
-											</ul>
-
-											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-												dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-												massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-												eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-												in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-												Praesent egestas leo in pede.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div id="work-txt-cfdi" class="exp-box">
-
-									<div class="box-head">
-										
-										<div class="box-head-t">
-
-											<h3>Campus FDI</h3>
-
-											<a href="https://www.campusfonderiedelimage.org/" target="_blank">@Campus FDI</a>
-
-										</div>
-										
-										<div class="box-head-d">
-
-											<p>Bac A.M.A</p>
-
-											<p>2015 - 2017</p>
-
-										</div>
-
-									</div>
-
-									<div class="box-body">
-
-										<div class="box-body-t">
-												
-											<ul>Objectifs Principaux
-													<li>Création du Collectif TheMystiCodeCollectif.</li>
-													<li>Utilisation de React pour la création du site internet.</li>
-													<li>Création de multiple liens de réseaux sociaux.</li>
-													<li>Aggrandir notre réseaux partenaires/clients.</li>
-											</ul>
-
-											<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
-												dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula 
-												massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est 
-												eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat 
-												in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. 
-												Praesent egestas leo in pede.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</section>
-		<!-- END EXPERIENCES AREA -->
-
-
-		<!-- WORK AREA -->
-			<section id="work-section">
-
-				<div class="ancre-title" >
-
-					<h2><span class="heading-pagination">03.</span>Projets récents</h2>
-
-				</div>
-
-				<div class="work-cont">
-
-					<figure class="work-fig-t1">
-
-						<div class="work-img">
-
-							<img src="img/webagency.png" alt="projet 1 dwj">
-
-						</div>
-
-						<figcaption class="work-des" id="work-pict1">
-
-							<div class="wd-head">
-
-								<div class="wd-head-t">
-
-									<h3>TheMystiCodeCollectif</h3>
-
-								</div>
-
-								<div class="wd-head-icon">
-
-									<a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-									<a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-chrome"></i></a>
-
-								</div>
-
-							</div>
-
-							<div class="wd-body">
-
-								<p>
-									C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
-									leurs domaines.
-								</p>
-
-							</div>
-
-							<div class="wd-footer">
-
-								<p>React</p>
-
-								<p>MYSQL</p>
-
-								<p>Javascript</p>
-
-							</div>
-
-						</figcaption>
-
-					</figure>
-
-					<figure class="work-fig-t2">
-
-						<div class="work-img">
-
-							<img src="img/webagency.png" alt="projet 1 dwj">
-
-						</div>
-
-						<figcaption class="work-des" id="work-pict2">
-
-							<div class="wd-head">
-
-								<div class="wd-head-t">
-
-									<h3>Namastha</h3>
-
-								</div>
-
-								<div class="wd-head-icon">
-
-									<a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-									<a href="#" target="_blank"><i class="fa-brands fa-chrome"></i></a>
-
-								</div>
-								
-							</div>
-
-							<div class="wd-body">
-
-								<p>
-									C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
-									leurs domaines.
-								</p>
-
-							</div>
-
-							<div class="wd-footer">
-
-								<span>Laravel</span>
-
-								<span>VS Code</span>
-
-								<span>Javascript</span>
-
-								<span>MySQL</span>
-
-							</div>
-
-						</figcaption>
-					</figure>
-
-					<figure class="work-fig-t1">
-
-						<div class="work-img">
-
-							<img src="img/webagency.png" alt="projet 1 dwj">
-
-						</div>
-
-						<figcaption class="work-des" id="work-pict1">
-
-							<div class="wd-head">
-
-								<div class="wd-head-t">
-
-									<h3>TchatBot Whatsapp</h3>
-
-								</div>
-
-								<div class="wd-head-icon">
-
-									<a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-									<a href="#" target="_blank"><i class="fa-brands fa-chrome"></i></a>
-
-								</div>
-								
-							</div>
-
-							<div class="wd-body">
-
-								<p>
-									C’ est un collectif, un groupe d’individus auto-entrepreneur composé de divers experts dans 
-									leurs domaines.
-								</p>
-
-							</div>
-
-							<div class="wd-footer">
-
-								<span>API</span>
-
-								<span>Discord</span>
-
-								<span>Whatsapp</span>
-
-								<span>Python</span>
-
-							</div>
-
-						</figcaption>
-
-					</figure>
-
-				</div>
-
-			</section>
-		<!-- END WORK AREA -->
-
-
-		<!-- PROJECT AREA -->
-			<section id="project-section">
-
-				<div class="ancre-title" >
-
-					<h2><span class="heading-pagination">04.</span>Autres projets</h2>
-
-				</div>
-
-				<div class="project-cont">
-
-					<div class="project-file"><!-- AS-BOOK-STATIQUE -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>Plateforme Jeux Soluce</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://github.com/Kalutos/AS-Book" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-								<a href="https://arthurselva.com" target="_blank"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : Projet perso</p>
-								
-								<p>Date : Non lancé</p>
-
-							</div>
-
-							<div class="project-b-b">
-								
-								<p>Création d'un nouveau site internet qui représentera mon book. Il sera travaillé en Html5,
-									Css3 et Javascript. Une fois le site optimale et d'autres compétences acquises il sera 
-									reconfiguré avec une base de données en plus et réécris en Php.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<p>Front-end Next.Js</p>
-								<p>API</p>
-								<p>Back-end Laravel</p>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- AS-BOOK-STATIQUE -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>AS-Book-Statique</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://github.com/Kalutos/AS-Book" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-								<a href="https://arthurselva.com" target="_blank"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : Portfolio</p>
-								
-								<p>Date : Non lancé</p>
-
-							</div>
-
-							<div class="project-b-b">
-								<p>Création d'un nouveau site internet qui représentera mon book. Il sera travaillé en Html5,
-									Css3 et Javascript. Une fois le site optimale et d'autres compétences acquises il sera 
-									reconfiguré avec une base de données en plus et réécris en Php.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>HTML 5</span>
-								<span>CSS 3</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- TRIANGLE OFFENSE DIGITAL -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>TheMystiCodeCollectif</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://www.triangleoffensedigital.com/" target="blank"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : Portfolio</p>
-								
-								<p>Date : Non lancé</p>
-
-							</div>
-
-							<div class="project-b-b">
-								<p>Collectifs de développeur proposant leurs aides à tout projets en fonctions de nos capacitées.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>HTML 5</span>
-								<span>CSS 3</span>
-								<span>Javascript</span>
-								<span>Next.Js</span>
-								<span>React</span>
-
-							</div>
-
-						</div>
-
-					</div>
-							
-					<div class="project-file"><!-- SITE ECRIVAIN -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>PDWD-OC-n°4</h3>
-
-							</div>
-							<div class="project-h-l">
-								<a href="https://arthurselva.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
-								<a href="https://arthurselva.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
-							</div>
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : Portfolio</p>
-								
-								<p>Date : Non lancé</p>
-
-							</div>
-
-							<div class="project-b-b">
-								<p>Quatrième et dernier projet de la formation OpenClassroom le diplôme Web dev Junior. Je dois créer un site d'un écrivain en Php
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>Php</span>
-								<span>MySQL</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- API LOCATION VELO -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>PDWD-OC-n°3</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-brands fa-github"></i></a>
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : API Location vélo</p>
-
-								<p>Date :</p>
-
-							</div>
-
-							<div class="project-b-b">
-								<p>Troisième projet de la formation OpenClassroom le diplôme Web dev Junior. Je dois 
-									créer une API de carte de vélo. HTML 5, CSS 3, Javascript pour ce projet.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>Html 5</span>
-								<span>CSS 3</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- WORDPRESS IREKI -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>PDWD-OC-n°2</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-brands fa-github"></i></a>
-
-								<a href="https://ireki.arthurselva.com/"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<span>Titre : Ireki</span>
-								<p>Date : 2019</p>
-
-							</div>
-
-							<div class="project-b-b">
-								<p>Deuxième projet de la formation OpenClassroom le diplôme Web dev Junior. 
-									Je dois proposer une maquette du site de l'office de tourisme à ireki. 
-									Je dois utiliser l'extension Gutenberg pour faire la maquette.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>Wordpress</span>
-								<span>Guthenberg</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- WEBAGENCY -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>PDWD-OC-n°1</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-brands fa-github"></i></a>
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : Webagency</p>
-								<p>Date : 2019</p>
-
-							</div>
-
-							<div class="project-b-b">
-								<p>Premier projet sur la plateforme OpenClassroom pour la formation Web développeur Junior. 
-									Pour ce projet un "client" nous transmet une maquette qu'on doit reproduire en suivant 
-									quelques consignes. Quel langage utilisé et à quelle fin. Ce site a été écrit en HTML 5 
-									et personnalisé en CSS 3. Le site doit être responsive et posséder une animation en Javascript.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>Html 5</span>
-								<span>Css 3</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- ENSMV -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>ENSMV</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://ensmv.com/"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre :</p>
-								<p>Date : 2015/2017</p>
-							</div>
-
-							<div class="project-b-b">
-
-								<p>Réalisation d'une maquette sur Photoshop et création d'un prototype de site pour l'école.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>Html 5</span>
-								<span>Css 3</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- PORTFOLIO 2017 -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>Portfolio n°2</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-brands fa-github"></i></a>
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : Portfolio n°2</p>
-								<p>Date : 2016/2017</p>
-
-							</div>
-
-							<div class="project-b-b">
-
-								<p>Création d'un second site portfolio suite à mon entrée au Campus fonderie de l'image.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>Html 5</span>
-								<span>Css 3</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- SITE WEB CAMPUS -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>PDWD-CFI</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-brands fa-github"></i></a>
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : Exercice</p>
-								<p>Date : 2016/2017</p>
-
-							</div>
-
-							<div class="project-b-b">
-
-								<p>Site web réalisé lors de mon Bac A.M.A au Campus Fonderie de l'image
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>Html 5</span>
-								<span>Css 3</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="project-file"><!-- PORTFOLIO 2015 -->
-
-						<div class="project-head">
-
-							<div class="project-h-t">
-
-								<h3>Portfolio n°1</h3>
-
-							</div>
-
-							<div class="project-h-l">
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-brands fa-github"></i></a>
-
-								<a href="https://arthurselva.com/site-school/"><i class="fa-solid fa-link"></i></a>
-
-							</div>
-
-						</div>
-
-						<div class="project-body">
-
-							<div class="project-b-h">
-
-								<p>Titre : Portfolio n°1</p>
-								<p>Date : 2015</p>
-							</div>
-
-							<div class="project-b-b">
-
-								<p>Le tout premier portfolio créée en 2015 sur Sublime Text en HTML5 
-									et CSS 3 après être tombé sur le site maintenant fermé "Le site 
-									du zéro" pour devenir "OpenClassroom" plus tard.
-								</p>
-
-							</div>
-							
-							<div class="project-b-f">
-
-								<span>Html 5</span>
-								<span>Css 3</span>
-								<span>Javascript</span>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</section>
-		<!-- END PROJECT AREA -->
-
-
-		<!-- CONTACT AREA -->
-			<section id="contact-section">
-
-				<div class="ancre-title" >
-
-					<h2><span class="heading-pagination">05.</span>Entrer en contact</h2>
-
-				</div>
-
-				<div class="form-cont">
-
-					<form action="/votre-action" method="post" class="formulaire" id="contactForm">
-
-						<div class="form-ask">
-		
-							<p>Que vous ayez une question ou que vous souhaitiez simplement dire bonjour, ma boîte de réception est toujours ouverte. Je ferai de mon mieux pour vous répondre dans les plus bref délais !</p>
-
-							<div>
-		
-								<label for="nom">Nom* :</label>
-								<input type="text" id="nom" name="nom" required>
-		
-							</div>
-		
-		
-		
-							<div>
-								<label for="prenom">Prénom* :</label>
-								<input type="text" id="prenom" name="prenom" required>
-		
-							</div>
-		
-							<div>
-		
-								<label for="email">Email* :</label>
-								<input name="email" id="email" type="email" autocomplete="off" required>
-		
-							</div>
-		
-							<div>
-		
-								<label for="telephone">Mobile* :</label>
-								<input type="tel" id="telephone" name="telephone" required>
-		
-							</div>
-		
-							<div>
-		
-								<label for="objet">Objet* :</label>
-								<input type="text" id="objet" name="objet" required>
-		
-							</div>
-		
-							<div>
-		
-								<label for="message">Message* :</label>
-								<textarea id="message" name="message" rows="4" required></textarea>
-		
-							</div>
-		
-						</div>
-		
-						<div class="form-infos-pro">
-		
-							<div class="form-infos-txt">
-								
-								<div>
-		
-									<p>arthurslfpro@gmail.com</p>
-		
-								</div>
-		
-								<div>
-		
-									<p>06.59.77.11.44</p>
-		
-								</div>
-		
-								<div>
-		
-									<p>95700 Roissy en France</p>
-		
-								</div>
-		
-		
-		
-							</div>
-		
-							<div class="form-icon-social">
-		
-								<a href="https://www.codepen.io/aselvaf" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-		
-								<a href="https://www.github.com/Kalutos" target="_blank"><i class="fa-brands fa-github"></i></a>
-		
-								<a href="https://www.linkedin.com/in/arthurselvafichepain/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-		
-		
-							</div>
-		
-						</div>
-		
-						<div class="check-answer">
-		
-							<div class="privacy-data">
-		
-									<input type="checkbox" id="accept" name="accept" required>
-									<label for="accept">En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la Politique de confidentialité.</label>
-		
-							</div>
-		
-							<div class="form-box-btn">
-		
-								<a href="mailto:selva.arthur@gmail.com"><button type="submit" title="mail" class="contact-btn">Envoyer</button></a>
-		
-							</div>
-		
-						</div>
-		
-					</form>
-					
-					<div class="response" id="responseMessage"></div>
-
-				</div>
-
-			</section>
-		<!-- END CONTACT AREA -->
-
-
-		<!-- END FOOTER-RESPON AREA -->
-			<div class="footer-respon">
-
-				<div>
-					<a href=""><i></i></a>
-					<a href="#home-section"><img src="img/ancre-up.png" alt="ancre-up"></a>
-				</div>
-
-				<div>
-					<p>Imaginé et produit par Arthur Selva</p>
-				</div>
-
-				<div>
-					<a href="#home-section"><img src="img/ancre-up.png" alt="ancre-up"></a>
-				</div>
-
-			</div>
-		<!-- END FOOTER-RESPON AREA -->
-
-		</main>
-
-		<footer><!-- FOOTER AREA -->
-
-			<div>
-				<a href=""><i></i></a>
-                <a href="#home-section"><img src="img/ancre-up.png" alt="ancre-up"></a>
-			</div>
-
-			<div>
-
-				<div>
-
-				</div>
-
-				<div>
-					<p>Imaginé et produit par Arthur Selva</p>
-				</div>
-
-			</div>
-
-			<div>
-				<a href="#home-section"><img src="img/ancre-up.png" alt="ancre-up"></a>
-			</div>
-
-		</footer><!-- END FOOTER AREA -->
-
-    </body>
-
-	<!-- SCRIPT AREA -->
-		<script src="https://kit.fontawesome.com/cd2ba50a4e.js" crossorigin="anonymous"></script>
-		<script src="js/menu-responsive.js"></script>
-		<script src="js/exp-table.js"></script>
-		<script src="js/redirect.js"></script>
-		<script src="js/show&hide.js"></script>
-
+            <div class="aboutme-btn">
+              <button
+                class="redirect-btn"
+                onclick="window.open('linkedin.com/in/arthurselvafichepain/', '_blank')"
+              >
+                Linkedin
+              </button>
+
+              <button
+                class="redirect-btn"
+                onclick="window.open('github.com/Kalutos', '_blank')"
+              >
+                Github
+              </button>
+
+              <button
+                class="redirect-btn"
+                onclick="window.open('facebook.com/', '_blank')"
+              >
+                Facebook
+              </button>
+
+              <a
+                href="img/cvwd.pdf"
+                id="cv-download-link"
+                download="VotreCV.pdf"
+              >
+                <button
+                  class="redirect-btn"
+                  onclick="window.open('facebook.com/', '_blank')"
+                >
+                  CV
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END ABOUT ME AREA -->
+
+      <!-- EXPERIENCES AREA -->
+      <section id="exp-section">
+        <div class="ancre-title">
+          <h2>
+            <span class="heading-pagination">02.</span>Expériences
+            professionelles et formations
+          </h2>
+        </div>
+
+        <div class="exp-cont">
+          <div class="exp-table">
+            <div class="table-head">
+              <div class="th-cln-bld"></div>
+
+              <div class="th-btn-select">
+                <button id="exp-btn-exp" class="t-h-btn">
+                  Expériences Professionnelles
+                </button>
+
+                <button id="exp-btn-form" class="t-h-btn">Formations</button>
+              </div>
+            </div>
+
+            <div class="table-body">
+              <div class="tb-btn-select">
+                <button id="work-choice-mysticode" class="t-b-btn">
+                  MystiCodeCollectif
+                </button>
+
+                <button id="work-choice-namastha" class="t-b-btn">
+                  Namastha
+                </button>
+
+                <button id="work-choice-bluebuddy" class="t-b-btn">
+                  BlueBuddy
+                </button>
+
+                <button id="work-choice-psj" class="t-b-btn">
+                  Plateforme jeux
+                </button>
+
+                <button id="work-choice-ensmv" class="t-b-btn">Ensmv</button>
+
+                <button id="work-choice-e42" class="t-b-btn">École 42</button>
+
+                <button id="work-choice-opcr" class="t-b-btn">
+                  OpenClassroom
+                </button>
+
+                <button id="work-choice-cfdi" class="t-b-btn">
+                  Campus FDI
+                </button>
+              </div>
+
+              <div class="tb-txt-select">
+                <div id="work-txt-mysticode" class="exp-box">
+                  <div class="box-head">
+                    <div class="box-head-t">
+                      <h3>MystiCodeCollectif</h3>
+
+                      <a
+                        href="https://triangleoffensedigital.com/"
+                        target="_blank"
+                        >@MystiCodeCollectif</a
+                      >
+                    </div>
+
+                    <div class="box-head-d">
+                      <p>Projet</p>
+
+                      <p>07 Juin 2023</p>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <div class="box-body-t">
+                      <ul>
+                        <p>Objectifs Principaux :</p>
+                        <li>
+                          <p>Création du Collectif TheMystiCodeCollectif.</p>
+                        </li>
+                        <li>
+                          <p>
+                            Utilisation de Nextjs pour la création du site
+                            internet.
+                          </p>
+                        </li>
+                        <li>
+                          <p>Création de multiple liens de réseaux sociaux.</p>
+                        </li>
+                        <li>
+                          <p>Aggrandir notre réseaux partenaires/clients.</p>
+                        </li>
+                      </ul>
+
+                      <p>
+                        C’ est un collectif, un groupe d’individus
+                        auto-entrepreneur composé de divers experts dans leurs
+                        domaines. Le fait de ne pas être une entreprise dite
+                        traditionnelle est pour préserver une liberté de
+                        mouvement et d’action facilitant ainsi l’ adaptation aux
+                        projets des clients ou partenaires. Ainsi nos experts
+                        peuvent avoir l’opportunité de travailler en
+                        collaboration sur des projets qui les passionnents tout
+                        en leur permettant d’accroite leur propre entreprise
+                        personnelle au sein d'un écosystème dynamique. Chaque
+                        membre de TheMystiCodeCollectif est auto-entrepreneur et
+                        sa structure se fonde sur le système d’un side hustle.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="work-txt-namastha" class="exp-box">
+                  <div class="box-head">
+                    <div class="box-head-t">
+                      <h3>Namastha</h3>
+
+                      <a href="#" target="_blank">@Namastha</a>
+                    </div>
+
+                    <div class="box-head-d">
+                      <p>Projet personnel</p>
+
+                      <p>Avril 2024</p>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <div class="box-body-t">
+                      <ul>
+                        Objectifs Principaux :
+                        <li>- Gestions de crise et tchat général</li>
+                        <li>- Journal alimentaire et émotionnel</li>
+                        <li>- Création d'objectifs hebdomadaires</li>
+                        <li>- Boîte à outils</li>
+                      </ul>
+
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non risus. Suspendisse lectus tortor, dignissim sit
+                        amet, adipiscing nec, ultricies sed, dolor. Cras
+                        elementum ultrices diam. Maecenas ligula massa, varius
+                        a, semper congue, euismod non, mi. Proin porttitor, orci
+                        nec nonummy molestie, enim est eleifend mi, non
+                        fermentum diam nisl sit amet erat. Duis semper. Duis
+                        arcu massa, scelerisque vitae, consequat in, pretium a,
+                        enim. Pellentesque congue. Ut in risus volutpat libero
+                        pharetra tempor. Cras vestibulum bibendum augue.
+                        Praesent egestas leo in pede.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="work-txt-bluebuddy" class="exp-box">
+                  <div class="box-head">
+                    <div class="box-head-t">
+                      <h3>BlueBuddy</h3>
+
+                      <a href="#" target="_blank">@BlueBuddy</a>
+                    </div>
+
+                    <div class="box-head-d">
+                      <p>Projet personnel</p>
+
+                      <p>Mai 2024</p>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <div class="box-body-t">
+                      <ul>
+                        Objectifs Principaux :
+                        <li>- Gestions de crise et tchat général</li>
+                        <li>- Journal alimentaire et émotionnel</li>
+                        <li>- Création d'objectifs hebdomadaires</li>
+                        <li>- Boîte à outils</li>
+                      </ul>
+
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non risus. Suspendisse lectus tortor, dignissim sit
+                        amet, adipiscing nec, ultricies sed, dolor. Cras
+                        elementum ultrices diam. Maecenas ligula massa, varius
+                        a, semper congue, euismod non, mi. Proin porttitor, orci
+                        nec nonummy molestie, enim est eleifend mi, non
+                        fermentum diam nisl sit amet erat. Duis semper. Duis
+                        arcu massa, scelerisque vitae, consequat in, pretium a,
+                        enim. Pellentesque congue. Ut in risus volutpat libero
+                        pharetra tempor. Cras vestibulum bibendum augue.
+                        Praesent egestas leo in pede.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="work-txt-psj" class="exp-box">
+                  <div class="box-head">
+                    <div class="box-head-t">
+                      <h3>Plateforme Jeux Soluce</h3>
+
+                      <a href="#" target="_blank">@</a>
+                    </div>
+
+                    <div class="box-head-d">
+                      <p>Projet personnel</p>
+
+                      <p>à venir</p>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <div class="box-body-t">
+                      <ul>
+                        Objectifs Principaux
+                        <li>Création du Collectif TheMystiCodeCollectif.</li>
+                        <li>
+                          Utilisation de React pour la création du site
+                          internet.
+                        </li>
+                        <li>Création de multiple liens de réseaux sociaux.</li>
+                        <li>Aggrandir notre réseaux partenaires/clients.</li>
+                      </ul>
+
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non risus. Suspendisse lectus tortor, dignissim sit
+                        amet, adipiscing nec, ultricies sed, dolor. Cras
+                        elementum ultrices diam. Maecenas ligula massa, varius
+                        a, semper congue, euismod non, mi. Proin porttitor, orci
+                        nec nonummy molestie, enim est eleifend mi, non
+                        fermentum diam nisl sit amet erat. Duis semper. Duis
+                        arcu massa, scelerisque vitae, consequat in, pretium a,
+                        enim. Pellentesque congue. Ut in risus volutpat libero
+                        pharetra tempor. Cras vestibulum bibendum augue.
+                        Praesent egestas leo in pede.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="work-txt-ensmv" class="exp-box">
+                  <div class="box-head">
+                    <div class="box-head-t">
+                      <h3>ENSMV</h3>
+
+                      <a href="https://ensmv.com/" target="_blank">@ENSMV</a>
+                    </div>
+
+                    <div class="box-head-d">
+                      <p>Projet personnel</p>
+
+                      <p>Octobre 2015 - Août 2017</p>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <div class="box-body-t">
+                      <ul>
+                        Objectifs Principaux
+                        <li>Création du Collectif TheMystiCodeCollectif.</li>
+                        <li>
+                          Utilisation de React pour la création du site
+                          internet.
+                        </li>
+                        <li>Création de multiple liens de réseaux sociaux.</li>
+                        <li>Aggrandir notre réseaux partenaires/clients.</li>
+                      </ul>
+
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non risus. Suspendisse lectus tortor, dignissim sit
+                        amet, adipiscing nec, ultricies sed, dolor. Cras
+                        elementum ultrices diam. Maecenas ligula massa, varius
+                        a, semper congue, euismod non, mi. Proin porttitor, orci
+                        nec nonummy molestie, enim est eleifend mi, non
+                        fermentum diam nisl sit amet erat. Duis semper. Duis
+                        arcu massa, scelerisque vitae, consequat in, pretium a,
+                        enim. Pellentesque congue. Ut in risus volutpat libero
+                        pharetra tempor. Cras vestibulum bibendum augue.
+                        Praesent egestas leo in pede.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="work-txt-e42" class="exp-box">
+                  <div class="box-head">
+                    <div class="box-head-t">
+                      <h3>École 42</h3>
+
+                      <a href="https://42.fr/" target="_blank">@École 42</a>
+                    </div>
+
+                    <div class="box-head-d">
+                      <p>Piscine école 42</p>
+
+                      <p>Mars 2021</p>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <div class="box-body-t">
+                      <ul>
+                        Objectifs Principaux
+                        <li>Création du Collectif TheMystiCodeCollectif.</li>
+                        <li>
+                          Utilisation de React pour la création du site
+                          internet.
+                        </li>
+                        <li>Création de multiple liens de réseaux sociaux.</li>
+                        <li>Aggrandir notre réseaux partenaires/clients.</li>
+                      </ul>
+
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non risus. Suspendisse lectus tortor, dignissim sit
+                        amet, adipiscing nec, ultricies sed, dolor. Cras
+                        elementum ultrices diam. Maecenas ligula massa, varius
+                        a, semper congue, euismod non, mi. Proin porttitor, orci
+                        nec nonummy molestie, enim est eleifend mi, non
+                        fermentum diam nisl sit amet erat. Duis semper. Duis
+                        arcu massa, scelerisque vitae, consequat in, pretium a,
+                        enim. Pellentesque congue. Ut in risus volutpat libero
+                        pharetra tempor. Cras vestibulum bibendum augue.
+                        Praesent egestas leo in pede.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="work-txt-opcr" class="exp-box">
+                  <div class="box-head">
+                    <div class="box-head-t">
+                      <h3>OpenClassroom</h3>
+
+                      <a href="https://openclassrooms.com/fr/" target="_blank"
+                        >@OpenClassroom</a
+                      >
+                    </div>
+
+                    <div class="box-head-d">
+                      <p>Formation Développeur web junior</p>
+
+                      <p>Janvier 2020</p>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <div class="box-body-t">
+                      <ul>
+                        Objectifs Principaux
+                        <li>Création du Collectif TheMystiCodeCollectif.</li>
+                        <li>
+                          Utilisation de React pour la création du site
+                          internet.
+                        </li>
+                        <li>Création de multiple liens de réseaux sociaux.</li>
+                        <li>Aggrandir notre réseaux partenaires/clients.</li>
+                      </ul>
+
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non risus. Suspendisse lectus tortor, dignissim sit
+                        amet, adipiscing nec, ultricies sed, dolor. Cras
+                        elementum ultrices diam. Maecenas ligula massa, varius
+                        a, semper congue, euismod non, mi. Proin porttitor, orci
+                        nec nonummy molestie, enim est eleifend mi, non
+                        fermentum diam nisl sit amet erat. Duis semper. Duis
+                        arcu massa, scelerisque vitae, consequat in, pretium a,
+                        enim. Pellentesque congue. Ut in risus volutpat libero
+                        pharetra tempor. Cras vestibulum bibendum augue.
+                        Praesent egestas leo in pede.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="work-txt-cfdi" class="exp-box">
+                  <div class="box-head">
+                    <div class="box-head-t">
+                      <h3>Campus FDI</h3>
+
+                      <a
+                        href="https://www.campusfonderiedelimage.org/"
+                        target="_blank"
+                        >@Campus FDI</a
+                      >
+                    </div>
+
+                    <div class="box-head-d">
+                      <p>Bac A.M.A</p>
+
+                      <p>2015 - 2017</p>
+                    </div>
+                  </div>
+
+                  <div class="box-body">
+                    <div class="box-body-t">
+                      <ul>
+                        Objectifs Principaux
+                        <li>Création du Collectif TheMystiCodeCollectif.</li>
+                        <li>
+                          Utilisation de React pour la création du site
+                          internet.
+                        </li>
+                        <li>Création de multiple liens de réseaux sociaux.</li>
+                        <li>Aggrandir notre réseaux partenaires/clients.</li>
+                      </ul>
+
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed non risus. Suspendisse lectus tortor, dignissim sit
+                        amet, adipiscing nec, ultricies sed, dolor. Cras
+                        elementum ultrices diam. Maecenas ligula massa, varius
+                        a, semper congue, euismod non, mi. Proin porttitor, orci
+                        nec nonummy molestie, enim est eleifend mi, non
+                        fermentum diam nisl sit amet erat. Duis semper. Duis
+                        arcu massa, scelerisque vitae, consequat in, pretium a,
+                        enim. Pellentesque congue. Ut in risus volutpat libero
+                        pharetra tempor. Cras vestibulum bibendum augue.
+                        Praesent egestas leo in pede.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END EXPERIENCES AREA -->
+
+      <!-- WORK AREA -->
+      <section id="work-section">
+        <div class="ancre-title">
+          <h2><span class="heading-pagination">03.</span>Projets récents</h2>
+        </div>
+
+        <div class="work-cont">
+          <div class="work-box">
+            <figure class="work-fig-t1">
+              <div class="work-img">
+                <img src="img/webagency.png" alt="projet 1 dwj" />
+              </div>
+
+              <figcaption class="work-des" id="work-pict1">
+                <div class="wd-head">
+                  <div class="wd-head-t">
+                    <h3>TheMystiCodeCollectif</h3>
+                  </div>
+
+                  <div class="wd-head-icon">
+                    <a href="https://www.google.com/" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+
+                    <a href="https://www.google.com/" target="_blank"
+                      ><i class="fa-brands fa-chrome"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="wd-body">
+                  <p>
+                    C’ est un collectif, un groupe d’individus auto-entrepreneur
+                    composé de divers experts dans leurs domaines.
+                  </p>
+                </div>
+
+                <div class="wd-footer">
+                  <p>React</p>
+
+                  <p>MYSQL</p>
+
+                  <p>Javascript</p>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="work-fig-t2">
+              <div class="work-img">
+                <img src="img/webagency.png" alt="projet 1 dwj" />
+              </div>
+
+              <figcaption class="work-des" id="work-pict2">
+                <div class="wd-head">
+                  <div class="wd-head-t">
+                    <h3>Namastha</h3>
+                  </div>
+
+                  <div class="wd-head-icon">
+                    <a href="#" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+
+                    <a href="#" target="_blank"
+                      ><i class="fa-brands fa-chrome"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="wd-body">
+                  <p>
+                    C’ est un collectif, un groupe d’individus auto-entrepreneur
+                    composé de divers experts dans leurs domaines.
+                  </p>
+                </div>
+
+                <div class="wd-footer">
+                  <span>Laravel</span>
+
+                  <span>VS Code</span>
+
+                  <span>Javascript</span>
+
+                  <span>MySQL</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="work-fig-t1">
+              <div class="work-img">
+                <img src="img/webagency.png" alt="projet 1 dwj" />
+              </div>
+
+              <figcaption class="work-des" id="work-pict1">
+                <div class="wd-head">
+                  <div class="wd-head-t">
+                    <h3>TchatBot Whatsapp</h3>
+                  </div>
+
+                  <div class="wd-head-icon">
+                    <a href="#" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+
+                    <a href="#" target="_blank"
+                      ><i class="fa-brands fa-chrome"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <div class="wd-body">
+                  <p>
+                    C’ est un collectif, un groupe d’individus auto-entrepreneur
+                    composé de divers experts dans leurs domaines.
+                  </p>
+                </div>
+
+                <div class="wd-footer">
+                  <span>API</span>
+
+                  <span>Discord</span>
+
+                  <span>Whatsapp</span>
+
+                  <span>Python</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- END WORK AREA -->
+
+      <!-- PROJECT AREA -->
+      <section id="project-section">
+        <div class="ancre-title">
+          <h2><span class="heading-pagination">04.</span>Autres projets</h2>
+        </div>
+
+        <div class="project-cont">
+          <div class="project-file">
+            <!-- AS-BOOK-STATIQUE -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>Plateforme Jeux Soluce</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://github.com/Kalutos/AS-Book" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://arthurselva.com" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Projet perso</p>
+
+                <p>Date : Non lancé</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Création d'un nouveau site internet qui représentera mon book.
+                  Il sera travaillé en Html5, Css3 et Javascript. Une fois le
+                  site optimale et d'autres compétences acquises il sera
+                  reconfiguré avec une base de données en plus et réécris en
+                  Php.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Front-end Next.Js</p>
+                <p>API</p>
+                <p>Back-end Laravel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- AS-BOOK-STATIQUE -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>AS-Book-Statique</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://github.com/Kalutos/AS-Book" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://arthurselva.com" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Portfolio</p>
+
+                <p>Date : Non lancé</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Création d'un nouveau site internet qui représentera mon book.
+                  Il sera travaillé en Html5, Css3 et Javascript. Une fois le
+                  site optimale et d'autres compétences acquises il sera
+                  reconfiguré avec une base de données en plus et réécris en
+                  Php.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>HTML 5</p>
+                <p>CSS 3</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- TRIANGLE OFFENSE DIGITAL -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>TheMystiCodeCollectif</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://www.triangleoffensedigital.com/" target="blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Portfolio</p>
+
+                <p>Date : Non lancé</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Collectifs de développeur proposant leurs aides à tout projets
+                  en fonctions de nos capacitées.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>HTML 5</p>
+                <p>CSS 3</p>
+                <p>Javascript</p>
+                <p>Next.Js</p>
+                <p>React</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- SITE ECRIVAIN -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>PDWD-OC-n°4</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://arthurselva.com/" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://arthurselva.com/" target="_blank"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Portfolio</p>
+
+                <p>Date : Non lancé</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Quatrième et dernier projet de la formation OpenClassroom le
+                  diplôme Web dev Junior. Je dois créer un site d'un écrivain en
+                  Php
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Php</p>
+                <p>MySQL</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- API LOCATION VELO -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>PDWD-OC-n°3</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : API Location vélo</p>
+
+                <p>Date :</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Troisième projet de la formation OpenClassroom le diplôme Web
+                  dev Junior. Je dois créer une API de carte de vélo. HTML 5,
+                  CSS 3, Javascript pour ce projet.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Html 5</p>
+                <p>CSS 3</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- WORDPRESS IREKI -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>PDWD-OC-n°2</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://ireki.arthurselva.com/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Ireki</p>
+                <p>Date : 2019</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Deuxième projet de la formation OpenClassroom le diplôme Web
+                  dev Junior. Je dois proposer une maquette du site de l'office
+                  de tourisme à ireki. Je dois utiliser l'extension Gutenberg
+                  pour faire la maquette.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Wordpress</p>
+                <p>Guthenberg</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- WEBAGENCY -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>PDWD-OC-n°1</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Webagency</p>
+                <p>Date : 2019</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Premier projet sur la plateforme OpenClassroom pour la
+                  formation Web développeur Junior. Pour ce projet un "client"
+                  nous transmet une maquette qu'on doit reproduire en suivant
+                  quelques consignes. Quel langage utilisé et à quelle fin. Ce
+                  site a été écrit en HTML 5 et personnalisé en CSS 3. Le site
+                  doit être responsive et posséder une animation en Javascript.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Html 5</p>
+                <p>Css 3</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- ENSMV -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>ENSMV</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://ensmv.com/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre :</p>
+                <p>Date : 2015/2017</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Réalisation d'une maquette sur Photoshop et création d'un
+                  prototype de site pour l'école.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Html 5</p>
+                <p>Css 3</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- PORTFOLIO 2017 -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>Portfolio n°2</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Portfolio n°2</p>
+                <p>Date : 2016/2017</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Création d'un second site portfolio suite à mon entrée au
+                  Campus fonderie de l'image.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Html 5</p>
+                <p>Css 3</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- SITE WEB CAMPUS -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>PDWD-CFI</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Exercice</p>
+                <p>Date : 2016/2017</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Site web réalisé lors de mon Bac A.M.A au Campus Fonderie de
+                  l'image
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Html 5</p>
+                <p>Css 3</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-file">
+            <!-- PORTFOLIO 2015 -->
+
+            <div class="project-head">
+              <div class="project-h-t">
+                <h3>Portfolio n°1</h3>
+              </div>
+
+              <div class="project-h-l">
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="https://arthurselva.com/site-school/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-b-h">
+                <p>Titre : Portfolio n°1</p>
+
+                <p>Date : 2015</p>
+              </div>
+
+              <div class="project-b-b">
+                <p>
+                  Le tout premier portfolio créée en 2015 sur Sublime Text en
+                  HTML5 et CSS 3 après être tombé sur le site maintenant fermé
+                  "Le site du zéro" pour devenir "OpenClassroom" plus tard.
+                </p>
+              </div>
+
+              <div class="project-b-f">
+                <p>Html 5</p>
+                <p>Css 3</p>
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PROJECT AREA -->
+
+      <!-- CONTACT AREA -->
+      <section id="contact-section">
+        <div class="ancre-title">
+          <h2><span class="heading-pagination">05.</span>Entrer en contact</h2>
+        </div>
+
+        <div class="form-cont">
+          <form
+            action="/votre-action"
+            method="post"
+            class="formulaire"
+            id="contactForm"
+          >
+            <div class="form-ask">
+              <p>
+                Que vous ayez une question ou que vous souhaitiez simplement
+                dire bonjour, ma boîte de réception est toujours ouverte. Je
+                ferai de mon mieux pour vous répondre dans les plus bref délais
+                !
+              </p>
+
+              <div>
+                <label for="nom">Nom* :</label>
+                <input type="text" id="nom" name="nom" required />
+              </div>
+
+              <div>
+                <label for="prenom">Prénom* :</label>
+                <input type="text" id="prenom" name="prenom" required />
+              </div>
+
+              <div>
+                <label for="email">Email* :</label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="telephone">Mobile* :</label>
+                <input type="tel" id="telephone" name="telephone" required />
+              </div>
+
+              <div>
+                <label for="objet">Objet* :</label>
+                <input type="text" id="objet" name="objet" required />
+              </div>
+
+              <div>
+                <label for="message">Message* :</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-infos-pro">
+              <div class="form-infos-txt">
+                <div>
+                  <p>arthurslfpro@gmail.com</p>
+                </div>
+
+                <div>
+                  <p>06.59.77.11.44</p>
+                </div>
+
+                <div>
+                  <p>95700 Roissy en France</p>
+                </div>
+              </div>
+
+              <div class="form-icon-social">
+                <a href="https://www.codepen.io/aselvaf" target="_blank"
+                  ><i class="fa-brands fa-codepen"></i
+                ></a>
+
+                <a href="https://www.github.com/Kalutos" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a
+                  href="https://www.linkedin.com/in/arthurselvafichepain/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="check-answer">
+              <div class="privacy-data">
+                <input type="checkbox" id="accept" name="accept" required />
+                <label for="accept"
+                  >En soumettant ce formulaire, j'accepte que mes données
+                  personnelles soient utilisées pour me recontacter. Aucun autre
+                  traitement ne sera effectué avec mes informations. Pour
+                  connaître et exercer vos droits, veuillez consultez la
+                  Politique de confidentialité.</label
+                >
+              </div>
+
+              <div class="form-box-btn">
+                <a href="mailto:selva.arthur@gmail.com"
+                  ><button type="submit" title="mail" class="contact-btn">
+                    Envoyer
+                  </button></a
+                >
+              </div>
+            </div>
+          </form>
+
+          <div class="response" id="responseMessage"></div>
+        </div>
+      </section>
+      <!-- END CONTACT AREA -->
+
+      <!-- END FOOTER-RESPON AREA -->
+      <div class="footer-respon">
+        <div>
+          <a href=""><i></i></a>
+          <a href="#home-section"
+            ><img src="img/ancre-up.png" alt="ancre-up"
+          /></a>
+        </div>
+
+        <div>
+          <p>Imaginé et produit par Arthur Selva</p>
+        </div>
+
+        <div>
+          <a href="#home-section"
+            ><img src="img/ancre-up.png" alt="ancre-up"
+          /></a>
+        </div>
+      </div>
+      <!-- END FOOTER-RESPON AREA -->
+    </main>
+
+    <footer>
+      <!-- FOOTER AREA -->
+
+      <div>
+        <a href=""><i></i></a>
+        <a href="#home-section"
+          ><img src="img/ancre-up.png" alt="ancre-up"
+        /></a>
+      </div>
+
+      <div>
+        <div></div>
+
+        <div>
+          <p>Imaginé et produit par Arthur Selva</p>
+        </div>
+      </div>
+
+      <div>
+        <a href="#home-section"
+          ><img src="img/ancre-up.png" alt="ancre-up"
+        /></a>
+      </div>
+    </footer>
+    <!-- END FOOTER AREA -->
+  </body>
+
+  <!-- SCRIPT AREA -->
+  <script
+    src="https://kit.fontawesome.com/cd2ba50a4e.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/menu-responsive.js"></script>
+  <script src="js/exp-table.js"></script>
+  <script src="js/redirect.js"></script>
+  <script src="js/show&hide.js"></script>
 </html>
